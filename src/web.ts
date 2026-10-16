@@ -84,12 +84,12 @@ function jobArticle(job: Job): string {
           : `<div class="learn" role="group" aria-label="Relevance feedback">
         <button type="button" class="fb fb-yes" data-verdict="relevant" aria-pressed="${fb === "relevant"}">Relevant</button>
         <button type="button" class="fb fb-no" data-verdict="not_relevant" aria-pressed="${fb === "not_relevant"}">Not relevant</button>
-        <span class="fb-status">${
+        <span class="fb-status"${fb ? "" : " hidden"}>${
           fb === "relevant"
             ? `Saved: relevant${whyText ? ` — ${esc(whyText)}` : ""}`
             : fb === "not_relevant"
               ? `Saved: not relevant${whyText ? ` — ${esc(whyText)}` : ""}`
-              : "Teach the agent why"
+              : ""
         }</span>
       </div>`
       }
@@ -121,12 +121,15 @@ export function renderDashboard(
     dateStyle: "full",
     timeStyle: "short",
   });
+  // Optional remote API for GitHub Pages (e.g. http://localhost:8787 or a hosted server)
+  const apiBase = (process.env.WEB_FEEDBACK_API_URL || "").replace(/\/$/, "");
 
   return `<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="radar-api-base" content="${esc(apiBase)}" />
   <title>RADAR · ${esc(profile.candidate.name)}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -361,6 +364,7 @@ export function renderDashboard(
       color: var(--warn);
     }
     .fb-status { font-size: 0.82rem; color: var(--muted); }
+    .fb-status[hidden] { display: none !important; }
     .reason-panel {
       margin-top: 0.85rem;
       padding: 0.85rem 0.95rem;
@@ -464,7 +468,7 @@ export function renderDashboard(
       </div>
     </div>
 
-    <p class="serve-hint" id="serve-hint">Mark Relevant / Not relevant and pick why (wrong role, location, seniority…). The next scan learns those reasons.</p>
+    <p class="serve-hint" id="serve-hint">Mark Relevant / Not relevant, then pick why. Feedback saves after you choose reasons.</p>
 
     <div class="filters" role="group" aria-label="Filter roles">
       <button type="button" data-filter="all" aria-pressed="true">All</button>
@@ -503,6 +507,36 @@ export function renderDashboard(
     const buttons = document.querySelectorAll(".filters button");
     const jobs = [...document.querySelectorAll(".job")];
     const hint = document.getElementById("serve-hint");
+    const apiBase = (document.querySelector('meta[name="radar-api-base"]')?.getAttribute("content") || "").replace(/\\/$/, "");
+    const feedbackUrl = (apiBase || "") + "/api/feedback";
+    const LS_KEY = "radar-feedback-v1";
+
+    function cleanError(raw) {
+      if (!raw) return "Could not save feedback";
+      const text = String(raw).replace(/<[^>]+>/g, " ").replace(/\\s+/g, " ").trim();
+      if (/405/.test(text) || /Not Allowed/i.test(text)) {
+        return "This page has no feedback server — saved on this device instead.";
+      }
+      return text.slice(0, 160);
+    }
+
+    function loadLocalFeedback() {
+      try { return JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch { return []; }
+    }
+
+    function saveLocalFeedback(entry) {
+      const all = loadLocalFeedback().filter((e) => e.jobId !== entry.jobId);
+      all.unshift(entry);
+      localStorage.setItem(LS_KEY, JSON.stringify(all));
+      return all;
+    }
+
+    function showStatus(article, text) {
+      const status = article.querySelector(".fb-status");
+      if (!status) return;
+      status.hidden = false;
+      status.textContent = text;
+    }
 
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -522,17 +556,36 @@ export function renderDashboard(
     async function postFeedback(article, verdict, reasons) {
       const raw = article.querySelector(".job-json")?.textContent || "{}";
       const job = JSON.parse(raw);
-      const res = await fetch("/api/feedback", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jobId: job.id, verdict, reasons, job }),
-      });
-      if (!res.ok) {
-        let msg = await res.text();
-        try { msg = JSON.parse(msg).error || msg; } catch {}
-        throw new Error(msg);
+      const payload = {
+        jobId: job.id,
+        verdict,
+        reasons,
+        job,
+        title: job.title,
+        company: job.company,
+        location: job.location,
+        source: job.source,
+        url: job.url,
+        updatedAt: new Date().toISOString(),
+      };
+
+      try {
+        const res = await fetch(feedbackUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) {
+          let msg = await res.text();
+          try { msg = JSON.parse(msg).error || msg; } catch {}
+          throw new Error(cleanError(msg));
+        }
+        return { ...(await res.json()), via: "server" };
+      } catch (err) {
+        // GitHub Pages cannot POST — keep learning data on this device
+        saveLocalFeedback(payload);
+        return { ok: true, via: "local", warning: cleanError(err && err.message) };
       }
-      return res.json();
     }
 
     function selectedReasons(panel, kind) {
@@ -550,6 +603,7 @@ export function renderDashboard(
         verdict === "not_relevant"
           ? "Why is this not relevant? (pick one or more)"
           : "Why is this relevant? (optional — pick any)";
+      showStatus(article, "Pick why, then Save feedback");
     }
 
     document.querySelectorAll(".job .fb").forEach((btn) => {
@@ -567,6 +621,11 @@ export function renderDashboard(
       btn.addEventListener("click", () => {
         const article = btn.closest(".job");
         article.querySelector(".reason-panel").hidden = true;
+        const status = article.querySelector(".fb-status");
+        if (status && !article.getAttribute("data-feedback")) {
+          status.hidden = true;
+          status.textContent = "";
+        }
       });
     });
 
@@ -575,33 +634,51 @@ export function renderDashboard(
         const article = btn.closest(".job");
         const panel = article.querySelector(".reason-panel");
         const verdict = panel.dataset.kind;
-        const status = article.querySelector(".fb-status");
         const reasons = selectedReasons(panel, verdict);
         if (verdict === "not_relevant" && reasons.length === 0) {
-          status.textContent = "Pick at least one reason (role, location, …)";
+          showStatus(article, "Pick at least one reason (role, location, …)");
           return;
         }
         try {
-          await postFeedback(article, verdict, reasons);
+          const result = await postFeedback(article, verdict, reasons);
           article.setAttribute("data-feedback", verdict);
           panel.hidden = true;
           const labels = reasons.join(", ");
-          status.textContent = verdict === "relevant"
+          const base = verdict === "relevant"
             ? ("Saved: relevant" + (labels ? " — " + labels : ""))
             : ("Saved: not relevant — " + labels);
-          if (hint) hint.textContent = "Feedback + reasons saved. Next daily scan will down-rank similar role/location patterns.";
+          showStatus(article, result.via === "local" ? (base + " (this device)") : base);
+          if (hint) {
+            hint.textContent = result.via === "local"
+              ? "Saved on this device. For the daily agent to learn it, use http://localhost:8787 on your PC (or connect a feedback API)."
+              : "Feedback + reasons saved. Next daily scan will use these reasons.";
+          }
         } catch (err) {
-          status.textContent = (err && err.message) || "Not saved — use the live server URL.";
+          showStatus(article, cleanError(err && err.message));
           console.error(err);
         }
       });
     });
 
-    fetch("/api/feedback")
-      .then((r) => { if (!r.ok) throw new Error("offline"); })
-      .catch(() => {
-        if (hint) hint.textContent = "Feedback needs the live server. Run npm run serve and open the public/local URL.";
+    // Restore locally saved feedback marks when API is unavailable (GitHub Pages)
+    const local = loadLocalFeedback();
+    if (local.length) {
+      local.forEach((e) => {
+        const article = document.querySelector('.job[data-id="' + CSS.escape(e.jobId) + '"]');
+        if (!article) return;
+        article.setAttribute("data-feedback", e.verdict);
+        article.querySelectorAll(".fb").forEach((b) => {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-verdict") === e.verdict));
+        });
+        const labels = (e.reasons || []).join(", ");
+        showStatus(
+          article,
+          (e.verdict === "relevant" ? "Saved: relevant" : "Saved: not relevant") +
+            (labels ? " — " + labels : "") +
+            " (this device)"
+        );
       });
+    }
   </script>
 </body>
 </html>`;
