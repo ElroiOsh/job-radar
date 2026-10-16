@@ -1,0 +1,13 @@
+# Static dashboard hosting (permanent public URL after Netlify deploy).
+# Feedback buttons need the Node server; for full phone feedback use a Node host
+# (Render/Railway) or keep `npm run serve` + tunnel for learning, and use this
+# URL as the always-on read-only dashboard + email link.
+
+[build]
+  publish = "web"
+  command = "npm run build-web"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

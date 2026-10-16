@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+data/seen-ids.json
+data/daily-last-run.log
+data/run-*.json
+.DS_Store
+*.log
+.vercel
+.netlify

@@ -1,0 +1,116 @@
+# Job Radar — candidate profile & search preferences
+candidate:
+  name: Elroi Oshri
+  email: elroiosh@gmail.com
+  location_home: Bnei Darom, Israel
+  summary: >
+    Mechanical Engineer and Engineering Team Leader with 7+ years in regulated
+    Medical Device (ISO 13485) and Pharma (GMP) manufacturing. Recently Production
+    Mechanics Team Leader at Syqe Medical. Seeking Smart Manufacturing / Industry 4.0,
+    manufacturing systems with automation & data orientation, or Engineering /
+    Manufacturing Manager roles — not classic NPI / mechanical design-only seats.
+
+experience_highlights:
+  - "Production Mechanics Team Leader @ Syqe Medical (2022–2026) — dual GMP + ISO 13485 lines"
+  - "Yield 58%→87%, batch 400g→800g via RCA/PFMEA; ECO ownership; supplier management"
+  - "Production Line Development Manager @ Criatera — ₪3M capex, automation metering, 6x output"
+  - "B.Sc. Mechanical Engineering, BGU; IDF Company Commander (Major)"
+
+target_roles:
+  - Smart Manufacturing / Industry 4.0 / Manufacturing Systems
+  - Manufacturing / Production Engineering (tech, automation, data)
+  - Engineering Manager / Manufacturing Manager
+  - Advanced Manufacturing / multidisciplinary R&D↔production bridge
+
+locations:
+  preferred:
+    - מרכז
+    - שפלה
+    - תל אביב
+    - ראשון לציון
+    - רחובות
+    - נס ציונה
+    - יבנה
+    - אשדוד
+    - מודיעין
+    - פתח תקווה
+    - הרצליה
+    - רעננה
+    - hybrid
+    - remote israel
+  avoid_unless_strong_match:
+    - חיפה
+    - צפון
+    - באר שבע
+    - דרום רחוק
+
+# Keywords used for API queries and scoring
+search_queries:
+  - smart manufacturing
+  - industry 4.0
+  - manufacturing systems engineer
+  - manufacturing engineering manager
+  - production engineering manager
+  - advanced manufacturing
+  - manufacturing automation
+  - industrial engineer manufacturing
+  - engineering manager manufacturing
+  - מנהל הנדסה
+  - הנדסת ייצור
+  - ייצור חכם
+  - אוטומציה תעשייתית
+  - מנהל ייצור הנדסה
+
+boost_keywords:
+  - smart manufacturing
+  - industry 4.0
+  - i4.0
+  - manufacturing systems
+  - digital manufacturing
+  - mes
+  - scada
+  - plc
+  - automation
+  - industrial iot
+  - iiot
+  - lean
+  - six sigma
+  - oee
+  - process improvement
+  - manufacturing manager
+  - engineering manager
+  - production manager
+  - operations engineering
+  - factory of the future
+  - data-driven
+  - erp
+  - ייצור חכם
+  - אוטומציה
+  - מנהל הנדסה
+  - הנדסת ייצור
+  - מנהל ייצור
+  - תעשייה 4.0
+
+# Soft penalty — still show if otherwise strong, but lower score
+deprioritize_keywords:
+  - mechanical design engineer
+  - design engineer only
+  - cad designer
+  - solidworks designer
+  - npi engineer
+  - new product introduction engineer
+  - draftsman
+  - עורך שרטוטים
+  - מתכנן מכני
+  - מהנדס תכן מכני
+
+hard_exclude_keywords:
+  - intern
+  - student position
+  - junior only
+  - משרת סטודנט
+  - ללא ניסיון
+
+min_match_score: 45
+max_jobs_in_email: 12
+max_days_old: 14
