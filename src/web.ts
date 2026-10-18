@@ -205,7 +205,7 @@ export function renderDashboard(
       z-index: -2;
       background:
         linear-gradient(180deg, rgba(14,22,20,0.25) 0%, rgba(14,22,20,0.72) 55%, rgba(14,22,20,0.92) 100%),
-        url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+        url("assets/hero-smart-factory.jpg") center/cover no-repeat;
     }
     .brand {
       font-family: Sora, sans-serif;
