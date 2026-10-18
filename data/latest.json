@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:22:57.655Z",
+  "generatedAt": "2026-10-18T05:29:38.544Z",
   "jobs": [
     {
       "id": "linkedin-4478859110",
@@ -99,6 +99,24 @@
       "isNew": false
     },
     {
+      "id": "linkedin-4441831234",
+      "source": "LinkedIn",
+      "title": "Manufacturing Execution & Systems Eng",
+      "company": "Applied Materials - Israel",
+      "location": "Rehovot, Center District, Israel",
+      "description": "MES / manufacturing systems engineering at Applied Materials in Rehovot. Strong Industry 4.0 fit. Open LinkedIn to apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/manufacturing-execution-systems-eng-at-applied-materials-israel-4441831234",
+      "postedAt": "2026-10-15T12:52:57.103Z",
+      "matchScore": 64,
+      "matchReasons": [
+        "Keywords: industry 4.0, manufacturing systems, mes",
+        "Role track: Smart Manufacturing / Industry 4.0 / Manufacturing Systems",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
       "id": "linkedin-4472920368",
       "source": "LinkedIn",
       "title": "Senior Automation Projects Engineer",
@@ -113,24 +131,6 @@
         "Title fit: automation",
         "Keywords: automation",
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "linkedin-4441831234",
-      "source": "LinkedIn",
-      "title": "Manufacturing Execution & Systems Eng",
-      "company": "Applied Materials - Israel",
-      "location": "Rehovot, Center District, Israel",
-      "description": "MES / manufacturing systems engineering at Applied Materials in Rehovot. Strong Industry 4.0 fit. Open LinkedIn to apply.",
-      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/manufacturing-execution-systems-eng-at-applied-materials-israel-4441831234",
-      "postedAt": "2026-10-15T12:52:57.103Z",
-      "matchScore": 64,
-      "matchReasons": [
-        "Keywords: industry 4.0, manufacturing systems, mes",
-        "Role track: Smart Manufacturing / Industry 4.0 / Manufacturing Systems",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
       "isNew": false
@@ -154,6 +154,23 @@
       "isNew": false
     },
     {
+      "id": "linkedin-4474830394",
+      "source": "LinkedIn",
+      "title": "Production Line Manager",
+      "company": "SpearUAV",
+      "location": "Emek Hefer Regional Council, Center District, Israel",
+      "description": "Production line management in advanced manufacturing. Open the LinkedIn posting to review full requirements and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/production-line-manager-931879-at-spearuav-4474830394",
+      "postedAt": "2026-10-15T12:52:57.103Z",
+      "matchScore": 56,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
       "id": "board-li-sm",
       "source": "LinkedIn",
       "title": "LinkedIn — Smart Manufacturing (Israel)",
@@ -162,7 +179,7 @@
       "description": "Opens LinkedIn Jobs for “Smart Manufacturing” in Israel. After it loads, sort by Most recent / Past 24 hours.",
       "requirements": "Then refine with Industry 4.0, manufacturing systems, or automation if needed.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Smart%20Manufacturing&location=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -178,7 +195,7 @@
       "description": "Opens LinkedIn Jobs for “Industry 4.0” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Industry%204.0&location=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -194,7 +211,7 @@
       "description": "Opens LinkedIn Jobs for “Engineering Manager” in Israel.",
       "requirements": "Prefer Manufacturing / Operations flavored titles over pure software EM roles.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Engineering%20Manager&location=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -210,7 +227,7 @@
       "description": "Opens LinkedIn Jobs for “Manufacturing Manager” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Manufacturing%20Manager&location=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -226,7 +243,7 @@
       "description": "Opens Indeed for manufacturing manager roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=manufacturing+manager&l=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -242,7 +259,7 @@
       "description": "Opens Indeed for smart manufacturing roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=smart+manufacturing&l=Israel",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -258,7 +275,7 @@
       "description": "Opens AllJobs guest results for the Center region. Use on-site filters for engineering / manufacturing.",
       "requirements": "Filter for הנדסה / ייצור after the page loads.",
       "url": "https://www.alljobs.co.il/SearchResultsGuest.aspx?page=1&position=&type=&city=&region=2",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -274,7 +291,7 @@
       "description": "Opens Drushim search for הנדסת ייצור (manufacturing engineering).",
       "requirements": "Refine location to Center / Shfela on the site.",
       "url": "https://www.drushim.co.il/jobs/search/%D7%94%D7%A0%D7%93%D7%A1%D7%AA%20%D7%99%D7%99%D7%A6%D7%95%D7%A8/",
-      "postedAt": "2026-10-15T13:22:57.638Z",
+      "postedAt": "2026-10-18T05:29:38.539Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -283,5 +300,5 @@
     }
   ],
   "newCount": 0,
-  "totalCount": 8
+  "totalCount": 9
 }
