@@ -11,7 +11,6 @@ function escapeHtml(s: string): string {
 
 function jobRow(job: Job): string {
   const badge = job.isNew ? `<span style="color:#0b6e4f;font-weight:700;">NEW</span> · ` : "";
-  const salary = job.salary ? `<br/><span style="color:#555;">Salary: ${escapeHtml(job.salary)}</span>` : "";
   return `
   <tr>
     <td style="padding:14px 0;border-bottom:1px solid #e6e2da;">
@@ -20,17 +19,9 @@ function jobRow(job: Job): string {
       </div>
       <div style="color:#4a5240;margin-top:4px;">
         ${escapeHtml(job.company)} · ${escapeHtml(job.location)} · ${escapeHtml(job.source)}
-        · Match <strong>${job.matchScore}%</strong>
       </div>
-      <div style="margin-top:8px;color:#2c3326;line-height:1.45;font-size:13px;">
-        ${escapeHtml(job.description.slice(0, 280))}${job.description.length > 280 ? "…" : ""}
-      </div>
-      <div style="margin-top:6px;color:#5a6350;font-size:12px;">
-        Why: ${escapeHtml(job.matchReasons.slice(0, 3).join(" · "))}
-      </div>
-      ${salary}
       <div style="margin-top:8px;">
-        <a href="${escapeHtml(job.url)}" style="color:#0b6e4f;font-weight:600;">Apply / open job →</a>
+        <a href="${escapeHtml(job.url)}" style="color:#0b6e4f;font-weight:600;">Apply on LinkedIn →</a>
       </div>
     </td>
   </tr>`;
@@ -38,7 +29,9 @@ function jobRow(job: Job): string {
 
 export function buildEmailHtml(result: RunResult, profile: Profile): string {
   const dashboard = process.env.WEB_DASHBOARD_URL?.trim();
-  const top = result.jobs.slice(0, profile.max_jobs_in_email);
+  const top = result.jobs
+    .filter((j) => !j.id.startsWith("board-") && !j.userFeedback)
+    .slice(0, profile.max_jobs_in_email);
   const newOnes = top.filter((j) => j.isNew);
 
   return `<!doctype html>

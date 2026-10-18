@@ -93,7 +93,7 @@ async function main(): Promise<void> {
   saveRun(result);
   saveSeenIds(markSeen(scoredListings, seen));
 
-  const webPath = writeDashboard(result, profile, learned);
+  const webPath = writeDashboard(result, profile, learned, feedback);
   console.log(`Dashboard → ${webPath}`);
   console.log(`Apply-ready shortlist: ${scoredListings.length} (${newCount} new)`);
   console.log(`Feedback: ${learned.relevant} relevant · ${learned.notRelevant} not relevant`);
