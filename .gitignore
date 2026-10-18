@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 data/seen-ids.json
+data/last-success-day.txt
 data/daily-last-run.log
 data/run-*.json
 .DS_Store

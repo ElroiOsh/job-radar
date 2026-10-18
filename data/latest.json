@@ -1,83 +1,82 @@
 {
-  "generatedAt": "2026-10-18T05:29:38.544Z",
+  "generatedAt": "2026-10-18T05:33:11.475Z",
   "jobs": [
     {
       "id": "linkedin-4478859110",
       "source": "LinkedIn",
-      "title": "MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)",
-      "company": "Systematics Ltd.",
+      "title": "מטמיע/ת מערכת לניהול רצפת ייצור (Tulip Composable MES)",
+      "company": "Systematics Ltd. Solutions at work.",
       "location": "Tel Aviv District, Israel",
-      "description": "Implement Tulip composable MES on the shop floor. Direct Smart Manufacturing / digital manufacturing fit. Open LinkedIn to apply.",
+      "description": "מטמיע/ת מערכת לניהול רצפת ייצור (Tulip Composable MES) at Systematics Ltd. Solutions at work. — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
       "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%98%D7%9E%D7%99%D7%A2-%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%9C%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%A8%D7%A6%D7%A4%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-tulip-composable-mes-at-systematics-ltd-solutions-at-work-4478859110",
-      "postedAt": "2026-10-15T12:52:57.103Z",
+      "postedAt": "2026-10-15",
       "matchScore": 92,
       "matchReasons": [
         "Title fit: mes",
-        "Keywords: smart manufacturing, digital manufacturing, mes",
-        "Role track: Smart Manufacturing / Industry 4.0 / Manufacturing Systems",
+        "Keywords: mes",
         "You marked this as relevant"
       ],
-      "isNew": false,
+      "isNew": true,
       "userFeedback": "relevant",
       "userFeedbackReasons": []
     },
     {
-      "id": "linkedin-4466895123",
+      "id": "linkedin-4475643540",
       "source": "LinkedIn",
       "title": "Manufacturing Manager",
-      "company": "JobsSeek (client)",
-      "location": "Beer Yaakov, Center District, Israel",
-      "description": "Manufacturing Manager opening in the Center. Open the LinkedIn posting to review full requirements and apply.",
+      "company": "proman",
+      "location": "Tel Aviv District, Israel",
+      "description": "Manufacturing Manager at proman — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/manufacturing-manager-at-jobsseek-4466895123",
-      "postedAt": "2026-10-15T12:52:57.103Z",
-      "matchScore": 73,
+      "url": "https://il.linkedin.com/jobs/view/manufacturing-manager-at-proman-4475643540",
+      "postedAt": "2026-10-11",
+      "matchScore": 74,
       "matchReasons": [
         "Title fit: manufacturing manager",
         "Keywords: manufacturing manager",
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
     },
     {
-      "id": "linkedin-4453450023",
+      "id": "linkedin-4468229341",
       "source": "LinkedIn",
-      "title": "Production Manager",
-      "company": "Phinergy",
-      "location": "Kfar Saba, Center District, Israel",
-      "description": "Production leadership role in a manufacturing environment. Open the LinkedIn posting to review full requirements and apply.",
+      "title": "Manufacturing Systems Specialist",
+      "company": "Delta Galil Industries",
+      "location": "Caesarea, Haifa District, Israel",
+      "description": "Manufacturing Systems Specialist at Delta Galil Industries — Caesarea, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/production-manager-at-phinergy-4453450023",
-      "postedAt": "2026-10-15T12:52:57.102Z",
-      "matchScore": 67,
+      "url": "https://il.linkedin.com/jobs/view/manufacturing-systems-specialist-at-delta-galil-industries-4468229341",
+      "postedAt": "2026-10-17",
+      "matchScore": 72,
       "matchReasons": [
-        "Title fit: production manager",
-        "Keywords: production manager",
+        "Title fit: manufacturing systems",
+        "Keywords: manufacturing systems",
+        "Role track: Smart Manufacturing / Industry 4.0 / Manufacturing Systems",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4462857900",
+      "source": "LinkedIn",
+      "title": "Warehouse Automation Technician- טכנאי.ת אוטומציה",
+      "company": "Kimberly-Clark",
+      "location": "Gilboa Regional Council, North District, Israel",
+      "description": "Warehouse Automation Technician- טכנאי.ת אוטומציה at Kimberly-Clark — Gilboa Regional Council, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/warehouse-automation-technician-%D7%98%D7%9B%D7%A0%D7%90%D7%99-%D7%AA-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-at-kimberly-clark-4462857900",
+      "postedAt": "2026-10-16",
+      "matchScore": 70,
+      "matchReasons": [
+        "Title fit: automation, אוטומציה",
+        "Keywords: automation, אוטומציה",
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
-    },
-    {
-      "id": "linkedin-4475657416",
-      "source": "LinkedIn",
-      "title": "Production Manager",
-      "company": "Eitan Medical",
-      "location": "Netanya, Center District, Israel",
-      "description": "Medical-device manufacturing production manager role. Open the LinkedIn posting to review full requirements and apply.",
-      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/production-manager-at-eitan-medical-4475657416",
-      "postedAt": "2026-10-15T12:52:57.103Z",
-      "matchScore": 67,
-      "matchReasons": [
-        "Title fit: production manager",
-        "Keywords: production manager",
-        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
+      "isNew": true
     },
     {
       "id": "linkedin-4479284124",
@@ -85,10 +84,10 @@
       "title": "Automation Engineer",
       "company": "Manpower Israel",
       "location": "South District, Israel",
-      "description": "Automation engineer opening via Manpower. Open LinkedIn to apply.",
+      "description": "Automation Engineer at Manpower Israel — South District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
       "url": "https://il.linkedin.com/jobs/view/automation-engineer-at-manpower-israel-4479284124",
-      "postedAt": "2026-10-15T12:52:57.103Z",
+      "postedAt": "2026-10-14",
       "matchScore": 66,
       "matchReasons": [
         "Title fit: automation",
@@ -96,36 +95,37 @@
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
     },
     {
-      "id": "linkedin-4441831234",
+      "id": "linkedin-4476454214",
       "source": "LinkedIn",
-      "title": "Manufacturing Execution & Systems Eng",
-      "company": "Applied Materials - Israel",
-      "location": "Rehovot, Center District, Israel",
-      "description": "MES / manufacturing systems engineering at Applied Materials in Rehovot. Strong Industry 4.0 fit. Open LinkedIn to apply.",
+      "title": "Engineering Manager",
+      "company": "BTG A Ferring Company",
+      "location": "Beer Tuvia Regional Council, South District, Israel",
+      "description": "Engineering Manager at BTG A Ferring Company — Beer Tuvia Regional Council, South District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/manufacturing-execution-systems-eng-at-applied-materials-israel-4441831234",
-      "postedAt": "2026-10-15T12:52:57.103Z",
+      "url": "https://il.linkedin.com/jobs/view/engineering-manager-at-btg-a-ferring-company-4476454214",
+      "postedAt": "2026-10-13",
       "matchScore": 64,
       "matchReasons": [
-        "Keywords: industry 4.0, manufacturing systems, mes",
-        "Role track: Smart Manufacturing / Industry 4.0 / Manufacturing Systems",
+        "Title fit: engineering manager",
+        "Keywords: engineering manager",
+        "Role track: Engineering Manager / Manufacturing Manager",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
     },
     {
-      "id": "linkedin-4472920368",
+      "id": "linkedin-4478568708",
       "source": "LinkedIn",
-      "title": "Senior Automation Projects Engineer",
-      "company": "PepsiCo",
-      "location": "Rahat, South District, Israel",
-      "description": "Senior automation projects in manufacturing. Location is south — score may be lower vs Center preference. Open LinkedIn to apply.",
+      "title": "Automation & Logistics Systems Integrator (570)",
+      "company": "Utron",
+      "location": "Hevel Modiin Regional Council, Center District, Israel",
+      "description": "Automation & Logistics Systems Integrator (570) at Utron — Hevel Modiin Regional Council, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/senior-automation-projects-engineer-at-pepsico-4472920368",
-      "postedAt": "2026-10-15T12:52:57.103Z",
+      "url": "https://il.linkedin.com/jobs/view/automation-logistics-systems-integrator-570-at-utron-4478568708",
+      "postedAt": "2026-10-12",
       "matchScore": 64,
       "matchReasons": [
         "Title fit: automation",
@@ -133,42 +133,181 @@
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
     },
     {
-      "id": "linkedin-4471408804",
+      "id": "linkedin-4475657416",
       "source": "LinkedIn",
-      "title": "PLC & OT Engineer",
-      "company": "Rafael Advanced Defense Systems",
-      "location": "Kiryat Bialik, Haifa District, Israel",
-      "description": "PLC/OT engineering role. Location is north — may score lower vs Center preference. Open LinkedIn to apply.",
+      "title": "Production Manager",
+      "company": "Eitan Medical",
+      "location": "Netanya, Center District, Israel",
+      "description": "Production Manager at Eitan Medical — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/plc-ot-engineer-at-rafael-advanced-defense-systems-4471408804",
-      "postedAt": "2026-10-15T12:52:57.103Z",
-      "matchScore": 58,
+      "url": "https://il.linkedin.com/jobs/view/production-manager-at-eitan-medical-4475657416",
+      "postedAt": "2026-10-11",
+      "matchScore": 60,
       "matchReasons": [
-        "Title fit: plc",
-        "Keywords: plc",
+        "Title fit: production manager",
+        "Keywords: production manager",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
     },
     {
-      "id": "linkedin-4474830394",
+      "id": "linkedin-4480112482",
       "source": "LinkedIn",
-      "title": "Production Line Manager",
-      "company": "SpearUAV",
-      "location": "Emek Hefer Regional Council, Center District, Israel",
-      "description": "Production line management in advanced manufacturing. Open the LinkedIn posting to review full requirements and apply.",
+      "title": "Priority ERP Implementer & System Analyst",
+      "company": "TopGum Industries",
+      "location": "Ramat Gan, Tel Aviv District, Israel",
+      "description": "Priority ERP Implementer & System Analyst at TopGum Industries — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/production-line-manager-931879-at-spearuav-4474830394",
-      "postedAt": "2026-10-15T12:52:57.103Z",
-      "matchScore": 56,
+      "url": "https://il.linkedin.com/jobs/view/priority-erp-implementer-system-analyst-at-topgum-industries-4480112482",
+      "postedAt": "2026-10-15",
+      "matchScore": 60,
+      "matchReasons": [
+        "Title fit: erp",
+        "Keywords: erp",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4476009543",
+      "source": "LinkedIn",
+      "title": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream",
+      "company": "PepsiCo",
+      "location": "Rahat, South District, Israel",
+      "description": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream at PepsiCo — Rahat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%9E%D7%A9%D7%9E%D7%A8%D7%AA-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9E%D7%A4%D7%A2%D7%9C-%D7%94%D7%94%D7%A8%D7%9B%D7%91%D7%95%D7%AA-sodastream-at-pepsico-4476009543",
+      "postedAt": "2026-10-12",
+      "matchScore": 59,
+      "matchReasons": [
+        "Title fit: אוטומציה",
+        "Keywords: אוטומציה",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4440436675",
+      "source": "LinkedIn",
+      "title": "Technical Production Manager",
+      "company": "Elbit Systems Israel",
+      "location": "Karmiel, North District, Israel",
+      "description": "Technical Production Manager at Elbit Systems Israel — Karmiel, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/technical-production-manager-at-elbit-systems-israel-4440436675",
+      "postedAt": "2026-10-15",
+      "matchScore": 59,
+      "matchReasons": [
+        "Title fit: production manager",
+        "Keywords: production manager",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4477263411",
+      "source": "LinkedIn",
+      "title": "Manufacturing Operations Manager",
+      "company": "JobsSeek",
+      "location": "Beer Yaakov, Center District, Israel",
+      "description": "Manufacturing Operations Manager at JobsSeek — Beer Yaakov, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/manufacturing-operations-manager-at-jobsseek-4477263411",
+      "postedAt": "2026-10-11",
+      "matchScore": 50,
       "matchReasons": [
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
-      "isNew": false
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4480327803",
+      "source": "LinkedIn",
+      "title": "Senior Manufacturing Engineer",
+      "company": "Medtronic",
+      "location": "Yoqneam Illit, North District, Israel",
+      "description": "Senior Manufacturing Engineer at Medtronic — Yoqneam Illit, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/senior-manufacturing-engineer-at-medtronic-4480327803",
+      "postedAt": "2026-10-16",
+      "matchScore": 50,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4451477584",
+      "source": "LinkedIn",
+      "title": "Senior Mechanical Engineer, Manufacturing Development",
+      "company": "NVIDIA",
+      "location": "Yokneam Ilit, North District, Israel",
+      "description": "Senior Mechanical Engineer, Manufacturing Development at NVIDIA — Yokneam Ilit, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/senior-mechanical-engineer-manufacturing-development-at-nvidia-4451477584",
+      "postedAt": "2026-10-14",
+      "matchScore": 50,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4477325359",
+      "source": "LinkedIn",
+      "title": "Product Configuration Engineer – Manufacturing",
+      "company": "DustPhotonics",
+      "location": "Modiin-Maccabim-Reut, Center District, Israel",
+      "description": "Product Configuration Engineer – Manufacturing at DustPhotonics — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/product-configuration-engineer-%E2%80%93-manufacturing-at-dustphotonics-4477325359",
+      "postedAt": "2026-10-15",
+      "matchScore": 50,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4478331403",
+      "source": "LinkedIn",
+      "title": "Senior Quality Engineer - Manufacturing",
+      "company": "HP",
+      "location": "Kiryat Gat, South District, Israel",
+      "description": "Senior Quality Engineer - Manufacturing at HP — Kiryat Gat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/senior-quality-engineer-manufacturing-at-hp-4478331403",
+      "postedAt": "2026-10-11",
+      "matchScore": 50,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4470485589",
+      "source": "LinkedIn",
+      "title": "System Manufacturing Integration Lead Engineer, Nitro Team, Annapurna Labs",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Haifa, Haifa District, Israel",
+      "description": "System Manufacturing Integration Lead Engineer, Nitro Team, Annapurna Labs at Amazon Web Services (AWS) — Haifa, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/system-manufacturing-integration-lead-engineer-nitro-team-annapurna-labs-at-amazon-web-services-aws-4470485589",
+      "postedAt": "2026-10-14",
+      "matchScore": 49,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
     },
     {
       "id": "board-li-sm",
@@ -179,7 +318,7 @@
       "description": "Opens LinkedIn Jobs for “Smart Manufacturing” in Israel. After it loads, sort by Most recent / Past 24 hours.",
       "requirements": "Then refine with Industry 4.0, manufacturing systems, or automation if needed.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Smart%20Manufacturing&location=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -195,7 +334,7 @@
       "description": "Opens LinkedIn Jobs for “Industry 4.0” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Industry%204.0&location=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -211,7 +350,7 @@
       "description": "Opens LinkedIn Jobs for “Engineering Manager” in Israel.",
       "requirements": "Prefer Manufacturing / Operations flavored titles over pure software EM roles.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Engineering%20Manager&location=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -227,7 +366,7 @@
       "description": "Opens LinkedIn Jobs for “Manufacturing Manager” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Manufacturing%20Manager&location=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -243,7 +382,7 @@
       "description": "Opens Indeed for manufacturing manager roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=manufacturing+manager&l=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -259,7 +398,7 @@
       "description": "Opens Indeed for smart manufacturing roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=smart+manufacturing&l=Israel",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -275,7 +414,7 @@
       "description": "Opens AllJobs guest results for the Center region. Use on-site filters for engineering / manufacturing.",
       "requirements": "Filter for הנדסה / ייצור after the page loads.",
       "url": "https://www.alljobs.co.il/SearchResultsGuest.aspx?page=1&position=&type=&city=&region=2",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -291,7 +430,7 @@
       "description": "Opens Drushim search for הנדסת ייצור (manufacturing engineering).",
       "requirements": "Refine location to Center / Shfela on the site.",
       "url": "https://www.drushim.co.il/jobs/search/%D7%94%D7%A0%D7%93%D7%A1%D7%AA%20%D7%99%D7%99%D7%A6%D7%95%D7%A8/",
-      "postedAt": "2026-10-18T05:29:38.539Z",
+      "postedAt": "2026-10-18T05:33:11.465Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -299,6 +438,6 @@
       "isNew": false
     }
   ],
-  "newCount": 0,
-  "totalCount": 9
+  "newCount": 17,
+  "totalCount": 17
 }

@@ -2,18 +2,19 @@ import "dotenv/config";
 import { loadProfile } from "./profile.js";
 import { fetchAdzuna } from "./fetchers/adzuna.js";
 import { fetchJooble } from "./fetchers/jooble.js";
+import { fetchLinkedInGuest } from "./fetchers/linkedin-guest.js";
 import { fetchLiveFileJobs } from "./fetchers/live-file.js";
 import { fetchDemoJobs } from "./fetchers/demo.js";
 import { boardSearchCards } from "./fetchers/manual-boards.js";
 import { enrichAndFilter } from "./match.js";
 import { feedbackSummary, loadFeedback } from "./feedback.js";
-import { loadPreviousListings, loadSeenIds, markSeen, saveRun, saveSeenIds } from "./store.js";
+import { loadSeenIds, markSeen, saveRun, saveSeenIds } from "./store.js";
 import { writeDashboard } from "./web.js";
 import { sendEmail } from "./email.js";
 import type { Job, RunResult } from "./types.js";
 import { looksLikeApplyUrl } from "./fetchers/jooble.js";
 
-type Raw = Omit<Job, "matchScore" | "matchReasons" | "isNew" | "userFeedback">;
+type Raw = Omit<Job, "matchScore" | "matchReasons" | "isNew" | "userFeedback" | "userFeedbackReasons">;
 
 function mergeRaw(...lists: Raw[][]): Raw[] {
   const map = new Map<string, Raw>();
@@ -43,12 +44,17 @@ async function main(): Promise<void> {
 
   let raw: Raw[] = [];
   if (!skipFetch) {
-    const [adzuna, jooble, live] = await Promise.all([
+    const linkedin = await fetchLinkedInGuest(profile);
+    const [adzuna, jooble] = await Promise.all([
       fetchAdzuna(profile),
       fetchJooble(profile),
-      Promise.resolve(fetchLiveFileJobs()),
     ]);
-    raw = mergeRaw(adzuna, jooble, live);
+    // Prefer freshly fetched LinkedIn; fall back to last saved file if fetch empty
+    const liveFallback = linkedin.length ? [] : fetchLiveFileJobs();
+    raw = mergeRaw(linkedin, adzuna, jooble, liveFallback);
+    console.log(`Fresh listings fetched: ${raw.length}`);
+  } else {
+    raw = fetchLiveFileJobs();
   }
 
   if (demo) {
@@ -56,12 +62,12 @@ async function main(): Promise<void> {
     raw = mergeRaw(raw, fetchDemoJobs());
   }
 
-  // Keep prior real apply-ready jobs for feedback continuity
-  const previous = loadPreviousListings().filter(isApplyReady);
-  raw = mergeRaw(raw, previous).filter((j) => demo || isApplyReady(j));
+  // Do NOT keep forever-stale previous shortlist — that blocked "new" jobs.
+  // Only keep apply-ready rows from this run's sources.
+  raw = raw.filter((j) => demo || isApplyReady(j));
 
   if (!demo && raw.length === 0) {
-    console.log("No apply-ready jobs yet. Run: node scripts/build-live-jobs.mjs");
+    console.log("No apply-ready jobs found this run.");
   }
 
   const boards = boardSearchCards();
@@ -91,7 +97,6 @@ async function main(): Promise<void> {
   console.log(`Dashboard → ${webPath}`);
   console.log(`Apply-ready shortlist: ${scoredListings.length} (${newCount} new)`);
   console.log(`Feedback: ${learned.relevant} relevant · ${learned.notRelevant} not relevant`);
-  console.log("Open http://localhost:8787 — click Apply to open the real job page");
 
   if (!skipEmail) {
     if (!demo || process.env.SMTP_PASS) {
