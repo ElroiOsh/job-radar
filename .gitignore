@@ -9,3 +9,6 @@ data/run-*.json
 *.log
 .vercel
 .netlify
+# Personal resumes — keep local only (used for CV match scoring)
+cv/*
+!cv/.gitkeep

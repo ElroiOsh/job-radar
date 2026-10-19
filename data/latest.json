@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T07:35:57.916Z",
+  "generatedAt": "2026-10-19T07:41:14.134Z",
   "jobs": [
     {
       "id": "linkedin-4407833947",
@@ -31,11 +31,48 @@
       "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
       "url": "https://il.linkedin.com/jobs/view/production-engineering-manager-243364-at-experis-israel-4478222076",
       "postedAt": "2026-10-18",
-      "matchScore": 64,
+      "matchScore": 72,
       "matchReasons": [
         "Title fit: engineering manager",
         "Keywords: engineering manager",
         "Role track: Engineering Manager / Manufacturing Manager",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4480931960",
+      "source": "LinkedIn",
+      "title": "Production Team Leader",
+      "company": "Exodigo",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "description": "Production Team Leader at Exodigo — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/production-team-leader-at-exodigo-4480931960",
+      "postedAt": "2026-10-19",
+      "matchScore": 54,
+      "matchReasons": [
+        "Location: Tel Aviv-Yafo, Tel Aviv District, Israel",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "linkedin-4480952248",
+      "source": "LinkedIn",
+      "title": "Manufacturing Project Manager",
+      "company": "Yael Korentec Technologies",
+      "location": "Yehud Monosson, Center District, Israel",
+      "description": "Manufacturing Project Manager at Yael Korentec Technologies — Yehud Monosson, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/manufacturing-project-manager-at-yael-korentec-technologies-4480952248",
+      "postedAt": "2026-10-19",
+      "matchScore": 52,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
       "isNew": true
@@ -55,29 +92,12 @@
         "Title fit: mes",
         "Keywords: mes",
         "Location: Tel Aviv District, Israel",
+        "Weak overlap with your resume",
         "You marked this as relevant"
       ],
       "isNew": false,
       "userFeedback": "relevant",
       "userFeedbackReasons": []
-    },
-    {
-      "id": "alljobs-8858319",
-      "source": "AllJobs",
-      "title": "מטמיע /ת מערכת לניהול רצפת ייצור (Tulip Composable MES)",
-      "company": "סיסטמטיקס",
-      "location": "תל אביב יפו",
-      "description": "מטמיע /ת מערכת לניהול רצפת ייצור (Tulip Composable MES) at סיסטמטיקס — תל אביב יפו. Open AllJobs for full details and apply.",
-      "requirements": "See the AllJobs posting for requirements.",
-      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8858319",
-      "matchScore": 71,
-      "matchReasons": [
-        "Title fit: mes",
-        "Keywords: mes",
-        "Location: תל אביב יפו",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
     },
     {
       "id": "alljobs-8853600",
@@ -88,12 +108,33 @@
       "description": "Mechanical Engineering Manager at Unknown company — תל אביב יפו. Open AllJobs for full details and apply.",
       "requirements": "See the AllJobs posting for requirements.",
       "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8853600",
-      "matchScore": 68,
+      "matchScore": 76,
       "matchReasons": [
         "Title fit: engineering manager",
         "Keywords: engineering manager",
         "Role track: Engineering Manager / Manufacturing Manager",
         "Location: תל אביב יפו",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "linkedin-4476454214",
+      "source": "LinkedIn",
+      "title": "Engineering Manager",
+      "company": "BTG A Ferring Company",
+      "location": "Beer Tuvia Regional Council, South District, Israel",
+      "description": "Engineering Manager at BTG A Ferring Company — Beer Tuvia Regional Council, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/engineering-manager-at-btg-a-ferring-company-4476454214",
+      "postedAt": "2026-10-13",
+      "matchScore": 70,
+      "matchReasons": [
+        "Title fit: engineering manager",
+        "Keywords: engineering manager",
+        "Role track: Engineering Manager / Manufacturing Manager",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
       "isNew": false
@@ -118,25 +159,6 @@
       "isNew": false
     },
     {
-      "id": "linkedin-4476454214",
-      "source": "LinkedIn",
-      "title": "Engineering Manager",
-      "company": "BTG A Ferring Company",
-      "location": "Beer Tuvia Regional Council, South District, Israel",
-      "description": "Engineering Manager at BTG A Ferring Company — Beer Tuvia Regional Council, South District, Israel. Open the LinkedIn posting for the full description and apply.",
-      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/engineering-manager-at-btg-a-ferring-company-4476454214",
-      "postedAt": "2026-10-13",
-      "matchScore": 63,
-      "matchReasons": [
-        "Title fit: engineering manager",
-        "Keywords: engineering manager",
-        "Role track: Engineering Manager / Manufacturing Manager",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
-    },
-    {
       "id": "linkedin-4478568708",
       "source": "LinkedIn",
       "title": "Automation & Logistics Systems Integrator (570)",
@@ -151,60 +173,6 @@
         "Title fit: automation",
         "Keywords: automation",
         "Role track: Manufacturing / Production Engineering (tech, automation, data)",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "alljobs-8815602",
-      "source": "AllJobs",
-      "title": "מפתח/ת אוטומציה למערכות מולטידיסציפלינריות",
-      "company": "Unknown company",
-      "location": "הרצליה",
-      "description": "מפתח/ת אוטומציה למערכות מולטידיסציפלינריות at Unknown company — הרצליה. Open AllJobs for full details and apply.",
-      "requirements": "See the AllJobs posting for requirements.",
-      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8815602",
-      "matchScore": 62,
-      "matchReasons": [
-        "Title fit: אוטומציה",
-        "Keywords: אוטומציה",
-        "Location: הרצליה",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "alljobs-8727201",
-      "source": "AllJobs",
-      "title": "מומחה/ית אוטומציה שיווקית",
-      "company": "Unknown company",
-      "location": "לוד",
-      "description": "מומחה/ית אוטומציה שיווקית at Unknown company — לוד. Open AllJobs for full details and apply.",
-      "requirements": "See the AllJobs posting for requirements.",
-      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8727201",
-      "matchScore": 62,
-      "matchReasons": [
-        "Title fit: אוטומציה",
-        "Keywords: אוטומציה",
-        "Location: לוד",
-        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "alljobs-8832091",
-      "source": "AllJobs",
-      "title": "מנהל/ת הנדסת ייצור - אזור תעשייה ברקן",
-      "company": "חברה חסויה",
-      "location": "רמת גן",
-      "description": "מנהל/ת הנדסת ייצור - אזור תעשייה ברקן at חברה חסויה — רמת גן. Open AllJobs for full details and apply.",
-      "requirements": "See the AllJobs posting for requirements.",
-      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8832091",
-      "matchScore": 62,
-      "matchReasons": [
-        "Title fit: הנדסת ייצור",
-        "Keywords: הנדסת ייצור",
-        "Location: רמת גן",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
       "isNew": false
@@ -228,19 +196,20 @@
       "isNew": false
     },
     {
-      "id": "linkedin-4476009543",
-      "source": "LinkedIn",
-      "title": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream",
-      "company": "PepsiCo",
-      "location": "Rahat, South District, Israel",
-      "description": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream at PepsiCo — Rahat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
-      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-      "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%9E%D7%A9%D7%9E%D7%A8%D7%AA-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9E%D7%A4%D7%A2%D7%9C-%D7%94%D7%94%D7%A8%D7%9B%D7%91%D7%95%D7%AA-sodastream-at-pepsico-4476009543",
-      "postedAt": "2026-10-12",
-      "matchScore": 58,
+      "id": "alljobs-8858319",
+      "source": "AllJobs",
+      "title": "מטמיע /ת מערכת לניהול רצפת ייצור (Tulip Composable MES)",
+      "company": "סיסטמטיקס",
+      "location": "תל אביב יפו",
+      "description": "מטמיע /ת מערכת לניהול רצפת ייצור (Tulip Composable MES) at סיסטמטיקס — תל אביב יפו. Open AllJobs for full details and apply.",
+      "requirements": "See the AllJobs posting for requirements.",
+      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8858319",
+      "matchScore": 61,
       "matchReasons": [
-        "Title fit: אוטומציה",
-        "Keywords: אוטומציה",
+        "Title fit: mes",
+        "Keywords: mes",
+        "Location: תל אביב יפו",
+        "Weak overlap with your resume",
         "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
       ],
       "isNew": false
@@ -318,6 +287,135 @@
       "isNew": false
     },
     {
+      "id": "linkedin-4421590651",
+      "source": "LinkedIn",
+      "title": "Process Engineer",
+      "company": "Elbit Systems Israel",
+      "location": "Holon, Tel Aviv District, Israel",
+      "description": "Process Engineer at Elbit Systems Israel — Holon, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/process-engineer-at-elbit-systems-israel-4421590651",
+      "postedAt": "2026-10-15",
+      "matchScore": 53,
+      "matchReasons": [
+        "Location: Holon, Tel Aviv District, Israel",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "linkedin-4477982778",
+      "source": "LinkedIn",
+      "title": "Mechanical NPI & Manufacturing Engineer",
+      "company": "DriveNets",
+      "location": "Raanana, Center District, Israel",
+      "description": "Mechanical NPI & Manufacturing Engineer at DriveNets — Raanana, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/mechanical-npi-manufacturing-engineer-at-drivenets-4477982778",
+      "postedAt": "2026-10-13",
+      "matchScore": 52,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "linkedin-4477325359",
+      "source": "LinkedIn",
+      "title": "Product Configuration Engineer – Manufacturing",
+      "company": "DustPhotonics",
+      "location": "Modiin-Maccabim-Reut, Center District, Israel",
+      "description": "Product Configuration Engineer – Manufacturing at DustPhotonics — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/product-configuration-engineer-%E2%80%93-manufacturing-at-dustphotonics-4477325359",
+      "postedAt": "2026-10-15",
+      "matchScore": 52,
+      "matchReasons": [
+        "Role track: Manufacturing / Production Engineering (tech, automation, data)",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "linkedin-4478799021",
+      "source": "LinkedIn",
+      "title": "Process Engineer",
+      "company": "Vishay Precision Group, Inc. (VPG)",
+      "location": "Holon, Tel Aviv District, Israel",
+      "description": "Process Engineer at Vishay Precision Group, Inc. (VPG) — Holon, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+      "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+      "url": "https://il.linkedin.com/jobs/view/process-engineer-at-vishay-precision-group-inc-vpg-4478799021",
+      "postedAt": "2026-10-13",
+      "matchScore": 52,
+      "matchReasons": [
+        "Location: Holon, Tel Aviv District, Israel",
+        "CV overlap with your resume (Elroi_Oshri_CV_ManufacturingProcessLead.txt)",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "alljobs-8815602",
+      "source": "AllJobs",
+      "title": "מפתח/ת אוטומציה למערכות מולטידיסציפלינריות",
+      "company": "Unknown company",
+      "location": "הרצליה",
+      "description": "מפתח/ת אוטומציה למערכות מולטידיסציפלינריות at Unknown company — הרצליה. Open AllJobs for full details and apply.",
+      "requirements": "See the AllJobs posting for requirements.",
+      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8815602",
+      "matchScore": 52,
+      "matchReasons": [
+        "Title fit: אוטומציה",
+        "Keywords: אוטומציה",
+        "Location: הרצליה",
+        "Weak overlap with your resume",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "alljobs-8727201",
+      "source": "AllJobs",
+      "title": "מומחה/ית אוטומציה שיווקית",
+      "company": "Unknown company",
+      "location": "לוד",
+      "description": "מומחה/ית אוטומציה שיווקית at Unknown company — לוד. Open AllJobs for full details and apply.",
+      "requirements": "See the AllJobs posting for requirements.",
+      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8727201",
+      "matchScore": 52,
+      "matchReasons": [
+        "Title fit: אוטומציה",
+        "Keywords: אוטומציה",
+        "Location: לוד",
+        "Weak overlap with your resume",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "alljobs-8832091",
+      "source": "AllJobs",
+      "title": "מנהל/ת הנדסת ייצור - אזור תעשייה ברקן",
+      "company": "חברה חסויה",
+      "location": "רמת גן",
+      "description": "מנהל/ת הנדסת ייצור - אזור תעשייה ברקן at חברה חסויה — רמת גן. Open AllJobs for full details and apply.",
+      "requirements": "See the AllJobs posting for requirements.",
+      "url": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8832091",
+      "matchScore": 52,
+      "matchReasons": [
+        "Title fit: הנדסת ייצור",
+        "Keywords: הנדסת ייצור",
+        "Location: רמת גן",
+        "Weak overlap with your resume",
+        "Similar to a role you marked relevant: MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)"
+      ],
+      "isNew": false
+    },
+    {
       "id": "board-li-sm",
       "source": "LinkedIn",
       "title": "LinkedIn — Smart Manufacturing (Israel)",
@@ -326,7 +424,7 @@
       "description": "Opens LinkedIn Jobs for “Smart Manufacturing” in Israel. After it loads, sort by Most recent / Past 24 hours.",
       "requirements": "Then refine with Industry 4.0, manufacturing systems, or automation if needed.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Smart%20Manufacturing&location=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -342,7 +440,7 @@
       "description": "Opens LinkedIn Jobs for “Industry 4.0” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Industry%204.0&location=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -358,7 +456,7 @@
       "description": "Opens LinkedIn Jobs for “Engineering Manager” in Israel.",
       "requirements": "Prefer Manufacturing / Operations flavored titles over pure software EM roles.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Engineering%20Manager&location=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -374,7 +472,7 @@
       "description": "Opens LinkedIn Jobs for “Manufacturing Manager” in Israel.",
       "requirements": "Sort by Most recent after opening.",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Manufacturing%20Manager&location=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -390,7 +488,7 @@
       "description": "Opens Indeed for manufacturing manager roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=manufacturing+manager&l=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -406,7 +504,7 @@
       "description": "Opens Indeed for smart manufacturing roles in Israel.",
       "requirements": "Sort by date after opening.",
       "url": "https://www.indeed.com/jobs?q=smart+manufacturing&l=Israel",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -422,7 +520,7 @@
       "description": "Opens AllJobs Center-region search for מנהל ייצור.",
       "requirements": "Sort by newest after opening.",
       "url": "https://www.alljobs.co.il/SearchResultsGuest.aspx?page=1&position=&type=&city=&region=2&freetxt=%D7%9E%D7%A0%D7%94%D7%9C+%D7%99%D7%99%D7%A6%D7%95%D7%A8",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -438,7 +536,7 @@
       "description": "Opens JobMaster for מנהל ייצור roles.",
       "requirements": "Filter location to Center / Shfela on the site.",
       "url": "https://www.jobmaster.co.il/jobs/?q=%D7%9E%D7%A0%D7%94%D7%9C+%D7%99%D7%99%D7%A6%D7%95%D7%A8",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -454,7 +552,7 @@
       "description": "Opens Drushim search for הנדסת ייצור.",
       "requirements": "Refine location to Center / Shfela on the site.",
       "url": "https://www.drushim.co.il/jobs/search/%D7%94%D7%A0%D7%93%D7%A1%D7%AA%20%D7%99%D7%99%D7%A6%D7%95%D7%A8/",
-      "postedAt": "2026-10-19T07:35:57.861Z",
+      "postedAt": "2026-10-19T07:41:13.896Z",
       "matchScore": 60,
       "matchReasons": [
         "Saved board search for daily manual scan"
@@ -462,6 +560,6 @@
       "isNew": false
     }
   ],
-  "newCount": 2,
-  "totalCount": 17
+  "newCount": 4,
+  "totalCount": 22
 }
