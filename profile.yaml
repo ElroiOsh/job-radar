@@ -119,7 +119,10 @@ hard_exclude_keywords:
   - junior only
   - משרת סטודנט
   - ללא ניסיון
+  - מנהלת חשבונות
+  - מנהל/ת לשכת
+  - דרוש /ה - מנהלת חשבונות
 
-min_match_score: 45
+min_match_score: 52
 max_jobs_in_email: 12
 max_days_old: 14

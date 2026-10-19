@@ -9,6 +9,7 @@ import { fetchLiveFileJobs } from "./fetchers/live-file.js";
 import { fetchDemoJobs } from "./fetchers/demo.js";
 import { boardSearchCards } from "./fetchers/manual-boards.js";
 import { enrichAndFilter } from "./match.js";
+import { loadCvProfile } from "./cv.js";
 import { feedbackSummary, loadFeedback } from "./feedback.js";
 import { loadSeenIds, markSeen, saveRun, saveSeenIds } from "./store.js";
 import { writeDashboard } from "./web.js";
@@ -101,9 +102,15 @@ async function main(): Promise<void> {
   saveSeenIds(markSeen(scoredListings, seen));
 
   const webPath = writeDashboard(result, profile, learned, feedback);
+  const cv = loadCvProfile();
   console.log(`Dashboard → ${webPath}`);
   console.log(`Apply-ready shortlist: ${scoredListings.length} (${newCount} new)`);
   console.log(`Feedback: ${learned.relevant} relevant · ${learned.notRelevant} not relevant`);
+  if (cv) {
+    console.log(`CV match: loaded ${cv.files.join(", ")} (${cv.tokens.size} tokens)`);
+  } else {
+    console.log("CV match: no files in cv/ yet — drop .txt or .md resumes there to tighten ranking");
+  }
 
   if (!skipEmail) {
     if (!demo || process.env.SMTP_PASS) {

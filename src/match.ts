@@ -1,6 +1,8 @@
+import { cvMatchDelta, loadCvProfile } from "./cv.js";
 import { applyFeedbackToScore, feedbackMap, feedbackReasonsMap } from "./feedback.js";
 import { isLocationAllowed, locationExcludeReason } from "./geo.js";
 import { reasonLabel } from "./reasons.js";
+import { titleIsBlocked, titleLacksTrack } from "./title-gate.js";
 import type { FeedbackEntry, Job, Profile } from "./types.js";
 
 function norm(s: string): string {
@@ -45,6 +47,14 @@ export function scoreJob(
     };
   }
 
+  if (titleIsBlocked(job.title)) {
+    return {
+      matchScore: 0,
+      matchReasons: [`Wrong title track: ${job.title}`],
+      excluded: true,
+    };
+  }
+
   // Explicit "not relevant" → drop from shortlist on future runs
   const byId = feedbackMap(feedback);
   const whyMap = feedbackReasonsMap(feedback);
@@ -57,18 +67,48 @@ export function scoreJob(
     };
   }
 
-  let score = 28;
+  // Learn blocked title phrases from your "Wrong role / title" rejects
+  const titleN = norm(job.title);
+  for (const e of feedback.filter((x) => x.verdict === "not_relevant")) {
+    const reasonsIds = e.reasons ?? [];
+    if (!reasonsIds.includes("wrong_role")) continue;
+    const rejectedTitle = norm(e.title);
+    if (rejectedTitle.length < 8) continue;
+    // Same title family: shared distinctive words (≥2 meaningful tokens)
+    const a = new Set(titleN.split(/[^a-z0-9\u0590-\u05ff]+/).filter((t) => t.length > 3));
+    const b = new Set(rejectedTitle.split(/[^a-z0-9\u0590-\u05ff]+/).filter((t) => t.length > 3));
+    let hit = 0;
+    for (const t of a) if (b.has(t)) hit += 1;
+    if (hit >= 2 && (a.size <= 6 || hit / a.size >= 0.45)) {
+      return {
+        matchScore: 0,
+        matchReasons: [`Similar title to a reject you marked wrong role: ${e.title}`],
+        excluded: true,
+      };
+    }
+  }
+
+  let score = 22;
   const reasons: string[] = [];
 
   const titleBoost = includesAny(norm(job.title), profile.boost_keywords);
   if (titleBoost.length) {
-    score += Math.min(28, 10 + titleBoost.length * 4);
+    score += Math.min(32, 14 + titleBoost.length * 5);
     reasons.push(`Title fit: ${titleBoost.slice(0, 3).join(", ")}`);
+  }
+
+  // Soft gate: body-only keyword hits are not enough without a title track signal
+  if (titleLacksTrack(job.title) && !titleBoost.length) {
+    return {
+      matchScore: 0,
+      matchReasons: ["No manufacturing/ops/systems signal in title"],
+      excluded: true,
+    };
   }
 
   const bodyBoost = includesAny(blob, profile.boost_keywords);
   if (bodyBoost.length) {
-    score += Math.min(22, bodyBoost.length * 2);
+    score += Math.min(16, bodyBoost.length * 2);
     reasons.push(`Keywords: ${bodyBoost.slice(0, 5).join(", ")}`);
   }
 
@@ -77,7 +117,7 @@ export function scoreJob(
       .split(/[\/,&]+/)
       .map((t) => t.trim())
       .filter((t) => t.length > 3);
-    return tokens.some((t) => blob.includes(t));
+    return tokens.some((t) => titleN.includes(t) || blob.includes(t));
   });
   if (roleHits.length) {
     score += Math.min(18, roleHits.length * 6);
@@ -123,6 +163,13 @@ export function scoreJob(
   if (job.salary) {
     score += 3;
     reasons.push("Salary listed");
+  }
+
+  const cv = loadCvProfile();
+  const cvHit = cvMatchDelta(job, cv);
+  if (cvHit.delta) {
+    score += cvHit.delta;
+    if (cvHit.reason) reasons.push(cvHit.reason);
   }
 
   const learned = applyFeedbackToScore(job, score, reasons, feedback);

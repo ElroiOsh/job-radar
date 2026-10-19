@@ -147,8 +147,8 @@ export function applyFeedbackToScore(
       reasons.push(`Location similar to a reject (${e.location})`);
     }
 
-    if (hasReason(e, "wrong_role") && titleSim >= 0.18) {
-      delta -= Math.round(16 + titleSim * 22);
+    if (hasReason(e, "wrong_role") && titleSim >= 0.14) {
+      delta -= Math.round(22 + titleSim * 28);
       reasons.push(`Title similar to a rejected role: ${e.title}`);
     }
 

@@ -276,6 +276,18 @@ export function renderDashboard(
       border: 1px solid var(--line);
       border-left: 4px solid var(--signal);
       padding: 1rem 1.15rem;
+      transition: opacity 0.28s ease, transform 0.28s ease, max-height 0.28s ease, margin 0.28s ease, padding 0.28s ease;
+    }
+    .job.leaving {
+      opacity: 0;
+      transform: translateX(-28px);
+      max-height: 0;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-width: 0;
+      overflow: hidden;
+      pointer-events: none;
     }
     .job[data-feedback="not_relevant"] { border-left-color: var(--warn); }
     .job[data-feedback="relevant"] { border-left-color: var(--signal); }
@@ -372,7 +384,7 @@ export function renderDashboard(
     <div class="section-head">
       <div>
         <h2>Your inbox</h2>
-        <p>Rate each role — it moves to Rated. Main tab stays only unrated jobs.</p>
+        <p>Rate a role — it slides out of New and lands in Rated. You stay on New.</p>
       </div>
       <div class="stats">
         <div><strong id="stat-new">${newJobs.length}</strong>new</div>
@@ -381,7 +393,7 @@ export function renderDashboard(
       </div>
     </div>
 
-    <p class="serve-hint" id="serve-hint">Mark Relevant or Not relevant, pick why, Save — the job leaves New and appears under Rated.</p>
+    <p class="serve-hint" id="serve-hint">Mark Relevant or Not relevant, pick why, Save — the card slides out; you keep browsing New.</p>
 
     <div class="tabs" role="tablist" aria-label="Job lists">
       <button type="button" class="tab" role="tab" id="tab-new" aria-selected="true" aria-controls="panel-new">New <span id="count-new">(${newJobs.length})</span></button>
@@ -521,18 +533,27 @@ export function renderDashboard(
       return (reasons || []).map((r) => REASON_LABELS[r] || r);
     }
 
-    function moveToRated(article, verdict, reasons, switchTab) {
-      article.dataset.feedback = verdict;
-      article.dataset.list = "rated";
-      setRatedBadge(article, verdict, labelReasons(reasons));
-      article.querySelectorAll(".fb").forEach((b) => {
-        b.setAttribute("aria-pressed", String(b.getAttribute("data-verdict") === verdict));
-      });
-      const status = article.querySelector(".fb-status");
-      if (status) { status.hidden = true; status.textContent = ""; }
-      ratedList.prepend(article);
-      updateCounts();
-      if (switchTab !== false) selectTab("rated");
+    function moveToRated(article, verdict, reasons, animate) {
+      const finish = () => {
+        article.classList.remove("leaving");
+        article.dataset.feedback = verdict;
+        article.dataset.list = "rated";
+        setRatedBadge(article, verdict, labelReasons(reasons));
+        article.querySelectorAll(".fb").forEach((b) => {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-verdict") === verdict));
+        });
+        const status = article.querySelector(".fb-status");
+        if (status) { status.hidden = true; status.textContent = ""; }
+        ratedList.prepend(article);
+        updateCounts();
+        // Stay on New — only the card leaves; Rated tab updates in the background
+      };
+      if (animate) {
+        article.classList.add("leaving");
+        setTimeout(finish, 280);
+      } else {
+        finish();
+      }
     }
 
     function selectTab(which) {
@@ -634,7 +655,7 @@ export function renderDashboard(
           await postFeedback(article, verdict, reasons);
           panel.hidden = true;
           moveToRated(article, verdict, reasons, true);
-          if (hint) hint.textContent = "Moved to Rated / viewed. New tab stays for unrated jobs only.";
+          if (hint) hint.textContent = "Saved — card left New. Still browsing unrated jobs.";
         });
       }
     }
