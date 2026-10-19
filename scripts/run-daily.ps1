@@ -14,12 +14,12 @@ function Write-Log([string]$msg) {
   Write-Host $line
 }
 
-# Once per calendar day — on login / wake we only send if not already done today
+# Once per calendar day - on login / wake we only send if not already done today
 if (Test-Path $stampFile) {
   $last = (Get-Content $stampFile -Raw).Trim()
   if ($last -eq $today) {
     "" | Set-Content -Path $log -Encoding utf8
-    Write-Log "Already ran successfully today ($today) — skip (no duplicate email)."
+    Write-Log "Already ran successfully today ($today) - skip (no duplicate email)."
     exit 0
   }
 }
