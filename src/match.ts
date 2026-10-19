@@ -1,4 +1,5 @@
 import { applyFeedbackToScore, feedbackMap, feedbackReasonsMap } from "./feedback.js";
+import { isLocationAllowed, locationExcludeReason } from "./geo.js";
 import { reasonLabel } from "./reasons.js";
 import type { FeedbackEntry, Job, Profile } from "./types.js";
 
@@ -10,6 +11,13 @@ function includesAny(haystack: string, needles: string[]): string[] {
   return needles.filter((n) => haystack.includes(norm(n)));
 }
 
+function isRecentlyPosted(postedAt: string | undefined, hours = 72): boolean {
+  if (!postedAt) return false;
+  const t = Date.parse(postedAt);
+  if (Number.isNaN(t)) return false;
+  return Date.now() - t <= hours * 3_600_000;
+}
+
 export function scoreJob(
   job: Omit<Job, "matchScore" | "matchReasons" | "isNew" | "userFeedback" | "userFeedbackReasons">,
   profile: Profile,
@@ -18,6 +26,15 @@ export function scoreJob(
   const blob = norm(
     [job.title, job.company, job.location, job.description, job.requirements].join(" ")
   );
+
+  const geoReason = locationExcludeReason(job.location);
+  if (geoReason || !isLocationAllowed(job.location)) {
+    return {
+      matchScore: 0,
+      matchReasons: [geoReason ?? `North of Tel Aviv: ${job.location}`],
+      excluded: true,
+    };
+  }
 
   const hardHits = includesAny(blob, profile.hard_exclude_keywords);
   if (hardHits.length) {
@@ -137,7 +154,8 @@ export function enrichAndFilter(
       ...job,
       matchScore,
       matchReasons,
-      isNew: !seenIds.has(job.id),
+      // First time we see the ID, or LinkedIn/board marks it as posted in the last 3 days
+      isNew: !seenIds.has(job.id) || isRecentlyPosted(job.postedAt, 72),
       userFeedback: verdicts.get(job.id),
       userFeedbackReasons: whyMap.get(job.id),
     });

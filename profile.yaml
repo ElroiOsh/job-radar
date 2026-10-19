@@ -27,6 +27,7 @@ locations:
     - מרכז
     - שפלה
     - תל אביב
+    - tel aviv
     - ראשון לציון
     - רחובות
     - נס ציונה
@@ -34,15 +35,23 @@ locations:
     - אשדוד
     - מודיעין
     - פתח תקווה
+    - רמת גן
+    - גבעתיים
+    - בני ברק
+    - חולון
+    - בת ים
+    - ראש העין
+    - לוד
+    - רמלה
     - הרצליה
     - רעננה
     - hybrid
     - remote israel
+  # Soft penalty only — hard north-of-TA (Haifa/Galilee) drop is in src/geo.ts
   avoid_unless_strong_match:
-    - חיפה
-    - צפון
     - באר שבע
     - דרום רחוק
+    - נתניה
 
 # Keywords used for API queries and scoring
 search_queries:

@@ -1,7 +1,9 @@
 import "dotenv/config";
 import { loadProfile } from "./profile.js";
 import { fetchAdzuna } from "./fetchers/adzuna.js";
+import { fetchAllJobs } from "./fetchers/alljobs.js";
 import { fetchJooble } from "./fetchers/jooble.js";
+import { fetchJobMaster } from "./fetchers/jobmaster.js";
 import { fetchLinkedInGuest } from "./fetchers/linkedin-guest.js";
 import { fetchLiveFileJobs } from "./fetchers/live-file.js";
 import { fetchDemoJobs } from "./fetchers/demo.js";
@@ -44,15 +46,20 @@ async function main(): Promise<void> {
 
   let raw: Raw[] = [];
   if (!skipFetch) {
-    const linkedin = await fetchLinkedInGuest(profile);
-    const [adzuna, jooble] = await Promise.all([
+    const [linkedin, alljobs, jobmaster, adzuna, jooble] = await Promise.all([
+      fetchLinkedInGuest(profile),
+      fetchAllJobs(profile),
+      fetchJobMaster(profile),
       fetchAdzuna(profile),
       fetchJooble(profile),
     ]);
-    // Prefer freshly fetched LinkedIn; fall back to last saved file if fetch empty
-    const liveFallback = linkedin.length ? [] : fetchLiveFileJobs();
-    raw = mergeRaw(linkedin, adzuna, jooble, liveFallback);
-    console.log(`Fresh listings fetched: ${raw.length}`);
+    // Prefer freshly fetched boards; fall back to last saved file if everything empty
+    const liveFallback =
+      linkedin.length + alljobs.length + jobmaster.length > 0 ? [] : fetchLiveFileJobs();
+    raw = mergeRaw(linkedin, alljobs, jobmaster, adzuna, jooble, liveFallback);
+    console.log(
+      `Fresh listings fetched: ${raw.length} (LI ${linkedin.length} · AllJobs ${alljobs.length} · JobMaster ${jobmaster.length})`
+    );
   } else {
     raw = fetchLiveFileJobs();
   }

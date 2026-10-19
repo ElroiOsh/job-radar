@@ -66,10 +66,17 @@ export function looksLikeApplyUrl(url: string): boolean {
       path.includes("/desc") ||
       path.includes("/vacancy") ||
       path.includes("/position") ||
+      path.includes("uploadsingle.aspx") ||
+      path.includes("checknum.asp") ||
       /\/jobs\/\d+/.test(path) ||
       u.searchParams.has("jk") ||
+      u.searchParams.has("JobID") ||
+      u.searchParams.has("key") ||
       u.hostname.includes("jooble") ||
-      u.hostname.includes("linkedin.com")
+      u.hostname.includes("linkedin.com") ||
+      u.hostname.includes("alljobs.co.il") ||
+      u.hostname.includes("jobmaster.co.il") ||
+      u.hostname.includes("drushim.co.il")
     ) {
       return true;
     }

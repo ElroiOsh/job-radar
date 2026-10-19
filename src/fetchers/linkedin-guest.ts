@@ -67,13 +67,17 @@ function parseCards(html: string): RawJob[] {
   return jobs;
 }
 
-async function fetchQuery(keywords: string): Promise<RawJob[]> {
+async function fetchQuery(
+  keywords: string,
+  location: string,
+  postedWithinSec: number
+): Promise<RawJob[]> {
   const url = new URL(
     "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
   );
   url.searchParams.set("keywords", keywords);
-  url.searchParams.set("location", "Israel");
-  url.searchParams.set("f_TPR", "r604800"); // past week
+  url.searchParams.set("location", location);
+  url.searchParams.set("f_TPR", `r${postedWithinSec}`);
   url.searchParams.set("start", "0");
 
   const res = await fetch(url, {
@@ -86,7 +90,7 @@ async function fetchQuery(keywords: string): Promise<RawJob[]> {
     },
   });
   if (!res.ok) {
-    console.warn(`LinkedIn guest "${keywords}": HTTP ${res.status}`);
+    console.warn(`LinkedIn guest "${keywords}" @ ${location}: HTTP ${res.status}`);
     return [];
   }
   const html = await res.text();
@@ -98,24 +102,46 @@ export async function fetchLinkedInGuest(profile: Profile): Promise<RawJob[]> {
     ...QUERIES,
     ...profile.search_queries.filter((q) => /[A-Za-z]/.test(q)).slice(0, 4),
   ];
-  const uniqueQueries = [...new Set(queries)].slice(0, 10);
+  const uniqueQueries = [...new Set(queries)].slice(0, 8);
+  // Prefer Center / TA — Haifa & North are hard-filtered later anyway
+  const locations = ["Tel Aviv-Yafo, Israel", "Rishon LeZion, Israel", "Rehovot, Israel"];
 
   const all: RawJob[] = [];
   const seen = new Set<string>();
 
-  for (const q of uniqueQueries) {
+  // Pass 1: past 24 hours (fresh)
+  for (const q of uniqueQueries.slice(0, 6)) {
     try {
-      const batch = await fetchQuery(q);
+      const batch = await fetchQuery(q, locations[0], 86_400);
       for (const job of batch) {
         if (seen.has(job.id)) continue;
         seen.add(job.id);
         all.push(job);
       }
-      console.log(`LinkedIn "${q}": ${batch.length} jobs`);
+      console.log(`LinkedIn 24h "${q}": ${batch.length} jobs`);
     } catch (err) {
-      console.warn(`LinkedIn fetch failed for "${q}":`, err);
+      console.warn(`LinkedIn 24h fetch failed for "${q}":`, err);
     }
-    await new Promise((r) => setTimeout(r, 450));
+    await new Promise((r) => setTimeout(r, 400));
+  }
+
+  // Pass 2: past week — Tel Aviv + one Shfela city (keep request count sane)
+  const weekLocs = [locations[0], locations[2]];
+  for (const q of uniqueQueries) {
+    for (const loc of weekLocs) {
+      try {
+        const batch = await fetchQuery(q, loc, 604_800);
+        for (const job of batch) {
+          if (seen.has(job.id)) continue;
+          seen.add(job.id);
+          all.push(job);
+        }
+        console.log(`LinkedIn "${q}" @ ${loc.split(",")[0]}: ${batch.length} jobs`);
+      } catch (err) {
+        console.warn(`LinkedIn fetch failed for "${q}":`, err);
+      }
+      await new Promise((r) => setTimeout(r, 350));
+    }
   }
 
   // Persist for dashboard continuity / offline rebuilds
