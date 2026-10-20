@@ -11,17 +11,6 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4478222076",
-    "source": "LinkedIn",
-    "title": "Production Engineering Manager 243364",
-    "company": "Experis Israel",
-    "location": "Petah Tikva, Center District, Israel",
-    "description": "Production Engineering Manager 243364 at Experis Israel — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/production-engineering-manager-243364-at-experis-israel-4478222076",
-    "postedAt": "2026-10-18"
-  },
-  {
     "id": "linkedin-4480952248",
     "source": "LinkedIn",
     "title": "Manufacturing Project Manager",
@@ -33,180 +22,125 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4395484256",
+    "id": "linkedin-4480970830",
     "source": "LinkedIn",
-    "title": "Mechanical Team Manager",
-    "company": "NVIDIA",
-    "location": "Yokneam Ilit, North District, Israel",
-    "description": "Mechanical Team Manager at NVIDIA — Yokneam Ilit, North District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/mechanical-team-manager-at-nvidia-4395484256",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4478215915",
-    "source": "LinkedIn",
-    "title": "QA Leader",
-    "company": "PCB Technologies Ltd.",
-    "location": "Migdal HaEmek, North District, Israel",
-    "description": "QA Leader at PCB Technologies Ltd. — Migdal HaEmek, North District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/qa-leader-at-pcb-technologies-ltd-4478215915",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4432767372",
-    "source": "LinkedIn",
-    "title": "NPI Product Expert Team Leader",
-    "company": "Elbit Systems Israel",
-    "location": "Netanya, Center District, Israel",
-    "description": "NPI Product Expert Team Leader at Elbit Systems Israel — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/npi-product-expert-team-leader-at-elbit-systems-israel-4432767372",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4448521351",
-    "source": "LinkedIn",
-    "title": "Customer Experience & Operation Team Leader",
-    "company": "SolarEdge Technologies",
-    "location": "Herzliya, Tel Aviv District, Israel",
-    "description": "Customer Experience & Operation Team Leader at SolarEdge Technologies — Herzliya, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/customer-experience-operation-team-leader-at-solaredge-technologies-4448521351",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4426161987",
-    "source": "LinkedIn",
-    "title": "Senior Product Quality Manager",
-    "company": "NVIDIA",
-    "location": "Yokneam Ilit, North District, Israel",
-    "description": "Senior Product Quality Manager at NVIDIA — Yokneam Ilit, North District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/senior-product-quality-manager-at-nvidia-4426161987",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4477564882",
-    "source": "LinkedIn",
-    "title": "QC Team Leader",
-    "company": "MediWound",
-    "location": "Yavne, Center District, Israel",
-    "description": "QC Team Leader at MediWound — Yavne, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/qc-team-leader-at-mediwound-4477564882",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4479927495",
-    "source": "LinkedIn",
-    "title": "Construction Manager",
-    "company": "Exyte",
-    "location": "Kiryat Gat, South District, Israel",
-    "description": "Construction Manager at Exyte — Kiryat Gat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/construction-manager-at-exyte-4479927495",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4478212799",
-    "source": "LinkedIn",
-    "title": "Hardware Manager",
-    "company": "Cardo Systems, Ltd",
-    "location": "Raanana, Center District, Israel",
-    "description": "Hardware Manager at Cardo Systems, Ltd — Raanana, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/hardware-manager-at-cardo-systems-ltd-4478212799",
-    "postedAt": "2026-10-18"
-  },
-  {
-    "id": "linkedin-4479972286",
-    "source": "LinkedIn",
-    "title": "DevOps Team Lead",
-    "company": "CONTROP Precision Technologies Ltd.",
+    "title": "Senior Director, Site Opex Lead",
+    "company": "Teva Pharmaceuticals",
     "location": "Kfar Saba, Center District, Israel",
-    "description": "DevOps Team Lead at CONTROP Precision Technologies Ltd. — Kfar Saba, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "Senior Director, Site Opex Lead at Teva Pharmaceuticals — Kfar Saba, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/devops-team-lead-at-controp-precision-technologies-ltd-4479972286",
+    "url": "https://il.linkedin.com/jobs/view/senior-director-site-opex-lead-at-teva-pharmaceuticals-4480970830",
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4441536566",
+    "id": "linkedin-4480963564",
     "source": "LinkedIn",
-    "title": "Space Cameras Development Manager",
+    "title": "Execution Manager",
+    "company": "Manpower Israel",
+    "location": "Center District, Israel",
+    "description": "Execution Manager at Manpower Israel — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/execution-manager-at-manpower-israel-4480963564",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4479986340",
+    "source": "LinkedIn",
+    "title": "מנהל/ת פרויקט אתרי חו\"ל - הקמה וניהול אתר",
+    "company": "IAI - Israel Aerospace Industries",
+    "location": "Lod, Center District, Israel",
+    "description": "מנהל/ת פרויקט אתרי חו\"ל - הקמה וניהול אתר at IAI - Israel Aerospace Industries — Lod, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98-%D7%90%D7%AA%D7%A8%D7%99-%D7%97%D7%95-%D7%9C-%D7%94%D7%A7%D7%9E%D7%94-%D7%95%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%90%D7%AA%D7%A8-at-iai-israel-aerospace-industries-4479986340",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4478269719",
+    "source": "LinkedIn",
+    "title": "Loitering Munition Project Manager",
+    "company": "IAI - Israel Aerospace Industries",
+    "location": "Yehud Monosson, Center District, Israel",
+    "description": "Loitering Munition Project Manager at IAI - Israel Aerospace Industries — Yehud Monosson, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/loitering-munition-project-manager-at-iai-israel-aerospace-industries-4478269719",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4461807930",
+    "source": "LinkedIn",
+    "title": "Program Manager - High‑Power Laser Systems",
     "company": "Elbit Systems Israel",
     "location": "Rehovot, Center District, Israel",
-    "description": "Space Cameras Development Manager at Elbit Systems Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "Program Manager - High‑Power Laser Systems at Elbit Systems Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/space-cameras-development-manager-at-elbit-systems-israel-4441536566",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/program-manager-high%E2%80%91power-laser-systems-at-elbit-systems-israel-4461807930",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4478229418",
+    "id": "linkedin-4478273869",
     "source": "LinkedIn",
-    "title": "Technology Lead for Manufacturing Information Systems(25836)",
-    "company": "Yael Group",
-    "location": "Rishon LeZion, Center District, Israel",
-    "description": "Technology Lead for Manufacturing Information Systems(25836) at Yael Group — Rishon LeZion, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Maintenance Manager",
+    "company": "Raya Shtelman HR",
+    "location": "Center District, Israel",
+    "description": "Maintenance Manager at Raya Shtelman HR — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/technology-lead-for-manufacturing-information-systems-25836-at-yael-group-4478229418",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/maintenance-manager-at-raya-shtelman-hr-4478273869",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4462601216",
+    "id": "linkedin-4481249377",
     "source": "LinkedIn",
-    "title": "AI Engineer - Technical Enablement - remote/Tel-Aviv",
-    "company": "Micron Technology",
-    "location": "Hadera, Haifa District, Israel",
-    "description": "AI Engineer - Technical Enablement - remote/Tel-Aviv at Micron Technology — Hadera, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "R&D Program Manager (581)",
+    "company": "Utron",
+    "location": "Hevel Modiin Regional Council, Center District, Israel",
+    "description": "R&D Program Manager (581) at Utron — Hevel Modiin Regional Council, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/ai-engineer-technical-enablement-remote-tel-aviv-at-micron-technology-4462601216",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/r-d-program-manager-581-at-utron-4481249377",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4480894119",
+    "id": "linkedin-4445199008",
     "source": "LinkedIn",
-    "title": "Realtime Embedded Software Engineer",
-    "company": "Servotronix Motion Control",
-    "location": "Petah Tikva, Center District, Israel",
-    "description": "Realtime Embedded Software Engineer at Servotronix Motion Control — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Propulsion Engineer",
+    "company": "JobsSeek",
+    "location": "Beer Yaakov, Center District, Israel",
+    "description": "Propulsion Engineer at JobsSeek — Beer Yaakov, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/realtime-embedded-software-engineer-at-servotronix-motion-control-4480894119",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/propulsion-engineer-at-jobsseek-4445199008",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4480897071",
+    "id": "linkedin-4478627701",
     "source": "LinkedIn",
-    "title": "Motion Control – RT Embedded Engineer",
-    "company": "Servotronix Motion Control",
-    "location": "Petah Tikva, Center District, Israel",
-    "description": "Motion Control – RT Embedded Engineer at Servotronix Motion Control — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Senior Software Engineer",
+    "company": "Nova Ltd.",
+    "location": "Rehovot, Center District, Israel",
+    "description": "Senior Software Engineer at Nova Ltd. — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/motion-control-%E2%80%93-rt-embedded-engineer-at-servotronix-motion-control-4480897071",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/senior-software-engineer-at-nova-ltd-4478627701",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4425899252",
+    "id": "linkedin-4478276124",
     "source": "LinkedIn",
-    "title": "Senior Product Manager",
-    "company": "Mobileye",
-    "location": "Ramat Gan, Tel Aviv District, Israel",
-    "description": "Senior Product Manager at Mobileye — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Industrial Automation Control Engineer",
+    "company": "Frisimos Technologies Ltd.",
+    "location": "Kadima, Center District, Israel",
+    "description": "Industrial Automation Control Engineer at Frisimos Technologies Ltd. — Kadima, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-mobileye-4425899252",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/industrial-automation-control-engineer-at-frisimos-technologies-ltd-4478276124",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4479922511",
+    "id": "linkedin-4478269278",
     "source": "LinkedIn",
-    "title": "Production Software Engineer for Algo Objects",
-    "company": "Mobileye",
-    "location": "Jerusalem District, Israel",
-    "description": "Production Software Engineer for Algo Objects at Mobileye — Jerusalem District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Senior Python Developer – Robotics Machines",
+    "company": "Frisimos Technologies Ltd.",
+    "location": "Kadima, Center District, Israel",
+    "description": "Senior Python Developer – Robotics Machines at Frisimos Technologies Ltd. — Kadima, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/production-software-engineer-for-algo-objects-at-mobileye-4479922511",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/senior-python-developer-%E2%80%93-robotics-machines-at-frisimos-technologies-ltd-4478269278",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4480932981",
@@ -220,48 +154,70 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4478212975",
+    "id": "linkedin-4480965711",
     "source": "LinkedIn",
-    "title": "Senior Microsoft Dynamics 365 CRM Developer",
-    "company": "Logica-IT",
-    "location": "Tel Aviv District, Israel",
-    "description": "Senior Microsoft Dynamics 365 CRM Developer at Logica-IT — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Senior Microsoft Dynamics 365 CRM Developer (37830)",
+    "company": "מרטנס | Mertens – מקבוצת מלם תים",
+    "location": "Center District, Israel",
+    "description": "Senior Microsoft Dynamics 365 CRM Developer (37830) at מרטנס | Mertens – מקבוצת מלם תים — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/senior-microsoft-dynamics-365-crm-developer-at-logica-it-4478212975",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/senior-microsoft-dynamics-365-crm-developer-37830-at-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1-mertens-%E2%80%93-%D7%9E%D7%A7%D7%91%D7%95%D7%A6%D7%AA-%D7%9E%D7%9C%D7%9D-%D7%AA%D7%99%D7%9D-4480965711",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4480900270",
+    "id": "linkedin-4480271184",
     "source": "LinkedIn",
-    "title": "Senior Dynamics 365 Developer",
-    "company": "Shavit Software",
+    "title": "Product Manager",
+    "company": "Trullion",
     "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "Senior Dynamics 365 Developer at Shavit Software — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "Product Manager at Trullion — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/senior-dynamics-365-developer-at-shavit-software-4480900270",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/product-manager-at-trullion-4480271184",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4479945060",
+    "id": "linkedin-4235865148",
     "source": "LinkedIn",
-    "title": "Sr. R&D Electrical and Control Engineer",
-    "company": "Stratasys",
+    "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
+    "company": "Mobileye",
+    "location": "Ramat Gan, Tel Aviv District, Israel",
+    "description": "Algorithm Researcher – Autonomous Driving (CTO Group) at Mobileye — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/algorithm-researcher-%E2%80%93-autonomous-driving-cto-group-at-mobileye-4235865148",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4472436335",
+    "source": "LinkedIn",
+    "title": "Algorithm Engineer",
+    "company": "Oriient",
+    "location": "Center District, Israel",
+    "description": "Algorithm Engineer at Oriient — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/algorithm-engineer-at-oriient-4472436335",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4478630395",
+    "source": "LinkedIn",
+    "title": "Industrial Engineer",
+    "company": "Applied Materials - Israel",
     "location": "Rehovot, Center District, Israel",
-    "description": "Sr. R&D Electrical and Control Engineer at Stratasys — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "Industrial Engineer at Applied Materials - Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/sr-r-d-electrical-and-control-engineer-at-stratasys-4479945060",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/industrial-engineer-at-applied-materials-israel-4478630395",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4478211477",
+    "id": "linkedin-4461313906",
     "source": "LinkedIn",
-    "title": "Head of Marketing",
-    "company": "Tessera Inc. (Formerly BiomX Inc.) NYSE: HLSQ",
-    "location": "Netanya, Center District, Israel",
-    "description": "Head of Marketing at Tessera Inc. (Formerly BiomX Inc.) NYSE: HLSQ — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Director of CX Operations",
+    "company": "Guesty",
+    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+    "description": "Director of CX Operations at Guesty — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/head-of-marketing-at-tessera-inc-formerly-biomx-inc-nyse-hlsq-4478211477",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/director-of-cx-operations-at-guesty-4461313906",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4434314292",
@@ -275,48 +231,59 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4441503496",
+    "id": "linkedin-4471335495",
     "source": "LinkedIn",
-    "title": "Embedded Software Engineer",
-    "company": "Elbit Systems Israel",
-    "location": "Ramat HaSharon, Tel Aviv District, Israel",
-    "description": "Embedded Software Engineer at Elbit Systems Israel — Ramat HaSharon, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Real-Time Embedded SW Engineer",
+    "company": "Mobileye",
+    "location": "Jerusalem District, Israel",
+    "description": "Real-Time Embedded SW Engineer at Mobileye — Jerusalem District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/embedded-software-engineer-at-elbit-systems-israel-4441503496",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/real-time-embedded-sw-engineer-at-mobileye-4471335495",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4422736015",
+    "id": "linkedin-4480223760",
     "source": "LinkedIn",
-    "title": "מהנדס.ת תהליך",
-    "company": "Elbit Systems Israel",
-    "location": "Ramla, Center District, Israel",
-    "description": "מהנדס.ת תהליך at Elbit Systems Israel — Ramla, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Product Execution Manager",
+    "company": "Mobileye",
+    "location": "Jerusalem District, Israel",
+    "description": "Product Execution Manager at Mobileye — Jerusalem District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%94%D7%A0%D7%93%D7%A1-%D7%AA-%D7%AA%D7%94%D7%9C%D7%99%D7%9A-at-elbit-systems-israel-4422736015",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/product-execution-manager-at-mobileye-4480223760",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4479919633",
+    "id": "linkedin-4478258953",
     "source": "LinkedIn",
-    "title": "NPI Engineer",
-    "company": "Quantum Machines",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "NPI Engineer at Quantum Machines — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Electrical Design Team Leader",
+    "company": "Dialog",
+    "location": "Center District, Israel",
+    "description": "Electrical Design Team Leader at Dialog — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/npi-engineer-at-quantum-machines-4479919633",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/electrical-design-team-leader-at-dialog-4478258953",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4480902530",
+    "id": "linkedin-4480254675",
     "source": "LinkedIn",
-    "title": "Industrial & Management Engineer",
-    "company": "Doona",
-    "location": "Herzliya, Tel Aviv District, Israel",
-    "description": "Industrial & Management Engineer at Doona — Herzliya, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Service Engineer",
+    "company": "Nova Ltd.",
+    "location": "Rehovot, Center District, Israel",
+    "description": "Service Engineer at Nova Ltd. — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/industrial-management-engineer-at-doona-4480902530",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/service-engineer-at-nova-ltd-4480254675",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4478268165",
+    "source": "LinkedIn",
+    "title": "מהנדס/ת פיתוח לחברה בתחום המיכשור רפואי",
+    "company": "Ursa Group",
+    "location": "Petah Tikva, Center District, Israel",
+    "description": "מהנדס/ת פיתוח לחברה בתחום המיכשור רפואי at Ursa Group — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%94%D7%A0%D7%93%D7%A1-%D7%AA-%D7%A4%D7%99%D7%AA%D7%95%D7%97-%D7%9C%D7%97%D7%91%D7%A8%D7%94-%D7%91%D7%AA%D7%97%D7%95%D7%9D-%D7%94%D7%9E%D7%99%D7%9B%D7%A9%D7%95%D7%A8-%D7%A8%D7%A4%D7%95%D7%90%D7%99-at-ursa-group-4478268165",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4478252367",
@@ -330,25 +297,14 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4473613876",
+    "id": "linkedin-4462514119",
     "source": "LinkedIn",
-    "title": "Industrial Engineer",
-    "company": "LTS Device Technologies",
-    "location": "Netanya, Center District, Israel",
-    "description": "Industrial Engineer at LTS Device Technologies — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "מומחה/ית לייצור בתוספת חומר (AME)",
+    "company": "Indus3Design",
+    "location": "Karmei Yosef, Center District, Israel",
+    "description": "מומחה/ית לייצור בתוספת חומר (AME) at Indus3Design — Karmei Yosef, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/industrial-engineer-at-lts-device-technologies-4473613876",
-    "postedAt": "2026-10-19"
-  },
-  {
-    "id": "linkedin-4478256266",
-    "source": "LinkedIn",
-    "title": "PM & System Engineer",
-    "company": "Camtek",
-    "location": "Migdal HaEmek, North District, Israel",
-    "description": "PM & System Engineer at Camtek — Migdal HaEmek, North District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/pm-system-engineer-at-camtek-4478256266",
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%95%D7%9E%D7%97%D7%94-%D7%99%D7%AA-%D7%9C%D7%99%D7%99%D7%A6%D7%95%D7%A8-%D7%91%D7%AA%D7%95%D7%A1%D7%A4%D7%AA-%D7%97%D7%95%D7%9E%D7%A8-ame-at-indus3design-4462514119",
     "postedAt": "2026-10-19"
   },
   {
@@ -363,26 +319,37 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4480871971",
+    "id": "linkedin-4478253782",
     "source": "LinkedIn",
-    "title": "Delivery Team Leader- JB-769",
-    "company": "PwC | NEXT Technology Solutions",
-    "location": "Tel Aviv District, Israel",
-    "description": "Delivery Team Leader- JB-769 at PwC | NEXT Technology Solutions — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Senior Mechanical Engineer",
+    "company": "Frisimos Technologies Ltd.",
+    "location": "Kadima, Center District, Israel",
+    "description": "Senior Mechanical Engineer at Frisimos Technologies Ltd. — Kadima, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/delivery-team-leader-jb-769-at-pwc-next-technology-solutions-4480871971",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/senior-mechanical-engineer-at-frisimos-technologies-ltd-4478253782",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4478209649",
+    "id": "linkedin-4478282437",
     "source": "LinkedIn",
-    "title": "Group Leader - Cloud Platform & SRE",
-    "company": "Confidential",
-    "location": "Center District, Israel",
-    "description": "Group Leader - Cloud Platform & SRE at Confidential — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Mechanical Engineer",
+    "company": "Ellipse Advanced System Innovation",
+    "location": "Yavne, Center District, Israel",
+    "description": "Mechanical Engineer at Ellipse Advanced System Innovation — Yavne, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/group-leader-cloud-platform-sre-at-confidential-4478209649",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/mechanical-engineer-at-ellipse-advanced-system-innovation-4478282437",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4480960010",
+    "source": "LinkedIn",
+    "title": "Core Team Manager",
+    "company": "Bluevine",
+    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+    "description": "Core Team Manager at Bluevine — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/core-team-manager-at-bluevine-4480960010",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4478258010",
@@ -396,26 +363,26 @@
     "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4407833947",
+    "id": "linkedin-4479976599",
     "source": "LinkedIn",
-    "title": "AI Backend Engineering Manager",
-    "company": "Stampli",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "AI Backend Engineering Manager at Stampli — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Infrastructure Backend Team Lead",
+    "company": "Antidote Health",
+    "location": "Ramat Gan, Tel Aviv District, Israel",
+    "description": "Infrastructure Backend Team Lead at Antidote Health — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/ai-backend-engineering-manager-at-stampli-4407833947",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/infrastructure-backend-team-lead-at-antidote-health-4479976599",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4479921420",
+    "id": "linkedin-4480949897",
     "source": "LinkedIn",
-    "title": "Head of Engineering",
-    "company": "JobsSeek",
-    "location": "Beer Yaakov, Center District, Israel",
-    "description": "Head of Engineering at JobsSeek — Beer Yaakov, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "DevOps Team Leader",
+    "company": "Earnix",
+    "location": "Ramat Gan, Tel Aviv District, Israel",
+    "description": "DevOps Team Leader at Earnix — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/head-of-engineering-at-jobsseek-4479921420",
-    "postedAt": "2026-10-18"
+    "url": "https://il.linkedin.com/jobs/view/devops-team-leader-at-earnix-4480949897",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4480946435",
@@ -426,6 +393,28 @@
     "description": "Engineering Team Lead at Aidoc — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/engineering-team-lead-at-aidoc-4480946435",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4480222760",
+    "source": "LinkedIn",
+    "title": "Product Execution Manager",
+    "company": "Mobileye",
+    "location": "Ramat Gan, Tel Aviv District, Israel",
+    "description": "Product Execution Manager at Mobileye — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/product-execution-manager-at-mobileye-4480222760",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4443491993",
+    "source": "LinkedIn",
+    "title": "Director - Agentic Search & Data Infrastructure",
+    "company": "Nimble",
+    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+    "description": "Director - Agentic Search & Data Infrastructure at Nimble — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/director-agentic-search-data-infrastructure-at-nimble-4443491993",
     "postedAt": "2026-10-19"
   },
   {
@@ -440,15 +429,26 @@
     "postedAt": "2026-10-17"
   },
   {
-    "id": "linkedin-4476009543",
+    "id": "linkedin-4480972361",
     "source": "LinkedIn",
-    "title": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream",
-    "company": "PepsiCo",
-    "location": "Rahat, South District, Israel",
-    "description": "מנהל/ת משמרת אוטומציה- מפעל ההרכבות Sodastream at PepsiCo — Rahat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "מנהל/ת משמרת מפעל אסם נסטלה בשדרות",
+    "company": "Nestlé",
+    "location": "Sderot, South District, Israel",
+    "description": "מנהל/ת משמרת מפעל אסם נסטלה בשדרות at Nestlé — Sderot, South District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%9E%D7%A9%D7%9E%D7%A8%D7%AA-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9E%D7%A4%D7%A2%D7%9C-%D7%94%D7%94%D7%A8%D7%9B%D7%91%D7%95%D7%AA-sodastream-at-pepsico-4476009543",
-    "postedAt": "2026-10-12"
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%9E%D7%A9%D7%9E%D7%A8%D7%AA-%D7%9E%D7%A4%D7%A2%D7%9C-%D7%90%D7%A1%D7%9D-%D7%A0%D7%A1%D7%98%D7%9C%D7%94-%D7%91%D7%A9%D7%93%D7%A8%D7%95%D7%AA-at-nestl%C3%A9-4480972361",
+    "postedAt": "2026-10-19"
+  },
+  {
+    "id": "linkedin-4480272702",
+    "source": "LinkedIn",
+    "title": "ראש צוות הרכבות ידניות",
+    "company": "Netafim",
+    "location": "Magal, Haifa District, Israel",
+    "description": "ראש צוות הרכבות ידניות at Netafim — Magal, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%A8%D7%90%D7%A9-%D7%A6%D7%95%D7%95%D7%AA-%D7%94%D7%A8%D7%9B%D7%91%D7%95%D7%AA-%D7%99%D7%93%D7%A0%D7%99%D7%95%D7%AA-at-netafim-4480272702",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4477403607",
@@ -517,6 +517,17 @@
     "postedAt": "2026-10-14"
   },
   {
+    "id": "linkedin-4469332317",
+    "source": "LinkedIn",
+    "title": "מנהל.ת מרכז ייצור במפעל מתכת",
+    "company": "Elbit Systems Israel",
+    "location": "Be'er Sheva, South District, Israel",
+    "description": "מנהל.ת מרכז ייצור במפעל מתכת at Elbit Systems Israel — Be'er Sheva, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%A0%D7%94%D7%9C-%D7%AA-%D7%9E%D7%A8%D7%9B%D7%96-%D7%99%D7%99%D7%A6%D7%95%D7%A8-%D7%91%D7%9E%D7%A4%D7%A2%D7%9C-%D7%9E%D7%AA%D7%9B%D7%AA-at-elbit-systems-israel-4469332317",
+    "postedAt": "2026-10-15"
+  },
+  {
     "id": "linkedin-4469069548",
     "source": "LinkedIn",
     "title": "Hardware Manager, Switch Design",
@@ -526,17 +537,6 @@
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/hardware-manager-switch-design-at-nvidia-4469069548",
     "postedAt": "2026-10-14"
-  },
-  {
-    "id": "linkedin-4478561717",
-    "source": "LinkedIn",
-    "title": "ראש צוות מעבדת שילובים",
-    "company": "Commit",
-    "location": "Yehud Monosson, Center District, Israel",
-    "description": "ראש צוות מעבדת שילובים at Commit — Yehud Monosson, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/%D7%A8%D7%90%D7%A9-%D7%A6%D7%95%D7%95%D7%AA-%D7%9E%D7%A2%D7%91%D7%93%D7%AA-%D7%A9%D7%99%D7%9C%D7%95%D7%91%D7%99%D7%9D-at-commit-4478561717",
-    "postedAt": "2026-10-12"
   },
   {
     "id": "linkedin-4478852280",
@@ -550,37 +550,37 @@
     "postedAt": "2026-10-15"
   },
   {
-    "id": "linkedin-4440434689",
+    "id": "linkedin-4478212799",
     "source": "LinkedIn",
-    "title": "מהנדס.ת מערכת בכיר.ה",
-    "company": "Elbit Systems Israel",
-    "location": "Lod, Center District, Israel",
-    "description": "מהנדס.ת מערכת בכיר.ה at Elbit Systems Israel — Lod, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Hardware Manager",
+    "company": "Cardo Systems, Ltd",
+    "location": "Raanana, Center District, Israel",
+    "description": "Hardware Manager at Cardo Systems, Ltd — Raanana, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%94%D7%A0%D7%93%D7%A1-%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%91%D7%9B%D7%99%D7%A8-%D7%94-at-elbit-systems-israel-4440434689",
-    "postedAt": "2026-10-15"
+    "url": "https://il.linkedin.com/jobs/view/hardware-manager-at-cardo-systems-ltd-4478212799",
+    "postedAt": "2026-10-18"
   },
   {
-    "id": "linkedin-4477978090",
+    "id": "linkedin-4479972286",
     "source": "LinkedIn",
-    "title": "Integration & Test Team Leader",
+    "title": "DevOps Team Lead",
     "company": "CONTROP Precision Technologies Ltd.",
     "location": "Kfar Saba, Center District, Israel",
-    "description": "Integration & Test Team Leader at CONTROP Precision Technologies Ltd. — Kfar Saba, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "DevOps Team Lead at CONTROP Precision Technologies Ltd. — Kfar Saba, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/integration-test-team-leader-at-controp-precision-technologies-ltd-4477978090",
-    "postedAt": "2026-10-13"
+    "url": "https://il.linkedin.com/jobs/view/devops-team-lead-at-controp-precision-technologies-ltd-4479972286",
+    "postedAt": "2026-10-19"
   },
   {
-    "id": "linkedin-4382795738",
+    "id": "linkedin-4478229418",
     "source": "LinkedIn",
-    "title": "Development Manager",
-    "company": "Elbit Systems Israel",
-    "location": "Rehovot, Center District, Israel",
-    "description": "Development Manager at Elbit Systems Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Technology Lead for Manufacturing Information Systems(25836)",
+    "company": "Yael Group",
+    "location": "Rishon LeZion, Center District, Israel",
+    "description": "Technology Lead for Manufacturing Information Systems(25836) at Yael Group — Rishon LeZion, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/development-manager-at-elbit-systems-israel-4382795738",
-    "postedAt": "2026-10-13"
+    "url": "https://il.linkedin.com/jobs/view/technology-lead-for-manufacturing-information-systems-25836-at-yael-group-4478229418",
+    "postedAt": "2026-10-18"
   },
   {
     "id": "linkedin-4478859110",
@@ -592,6 +592,17 @@
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%98%D7%9E%D7%99%D7%A2-%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%9C%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%A8%D7%A6%D7%A4%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-tulip-composable-mes-at-systematics-ltd-solutions-at-work-4478859110",
     "postedAt": "2026-10-15"
+  },
+  {
+    "id": "linkedin-4462601216",
+    "source": "LinkedIn",
+    "title": "AI Engineer - Technical Enablement - remote/Tel-Aviv",
+    "company": "Micron Technology",
+    "location": "Hadera, Haifa District, Israel",
+    "description": "AI Engineer - Technical Enablement - remote/Tel-Aviv at Micron Technology — Hadera, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/ai-engineer-technical-enablement-remote-tel-aviv-at-micron-technology-4462601216",
+    "postedAt": "2026-10-18"
   },
   {
     "id": "linkedin-4443788282",
@@ -616,17 +627,6 @@
     "postedAt": "2026-10-14"
   },
   {
-    "id": "linkedin-4436869945",
-    "source": "LinkedIn",
-    "title": "Power Management Firmware Architect",
-    "company": "Intel",
-    "location": "Petah Tikva, Center District, Israel",
-    "description": "Power Management Firmware Architect at Intel — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/power-management-firmware-architect-at-intel-4436869945",
-    "postedAt": "2026-10-12"
-  },
-  {
     "id": "linkedin-4452441331",
     "source": "LinkedIn",
     "title": "SRE Tech Lead",
@@ -636,61 +636,6 @@
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/sre-tech-lead-at-harman-international-4452441331",
     "postedAt": "2026-10-13"
-  },
-  {
-    "id": "linkedin-4478568708",
-    "source": "LinkedIn",
-    "title": "Automation & Logistics Systems Integrator (570)",
-    "company": "Utron",
-    "location": "Hevel Modiin Regional Council, Center District, Israel",
-    "description": "Automation & Logistics Systems Integrator (570) at Utron — Hevel Modiin Regional Council, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/automation-logistics-systems-integrator-570-at-utron-4478568708",
-    "postedAt": "2026-10-12"
-  },
-  {
-    "id": "linkedin-4476024431",
-    "source": "LinkedIn",
-    "title": "PLC and HMI Programmer",
-    "company": "Ravona LTD",
-    "location": "Modiin-Maccabim-Reut, Center District, Israel",
-    "description": "PLC and HMI Programmer at Ravona LTD — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/plc-and-hmi-programmer-at-ravona-ltd-4476024431",
-    "postedAt": "2026-10-12"
-  },
-  {
-    "id": "linkedin-4477310618",
-    "source": "LinkedIn",
-    "title": "Control System Specialist",
-    "company": "Chevron",
-    "location": "Herzliya, Tel Aviv District, Israel",
-    "description": "Control System Specialist at Chevron — Herzliya, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/control-system-specialist-at-chevron-4477310618",
-    "postedAt": "2026-10-15"
-  },
-  {
-    "id": "linkedin-4469343005",
-    "source": "LinkedIn",
-    "title": "Senior Software & AI Engineer",
-    "company": "Applied Materials - Israel",
-    "location": "Rehovot, Center District, Israel",
-    "description": "Senior Software & AI Engineer at Applied Materials - Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/senior-software-ai-engineer-at-applied-materials-israel-4469343005",
-    "postedAt": "2026-10-15"
-  },
-  {
-    "id": "linkedin-4471592840",
-    "source": "LinkedIn",
-    "title": "Customer Technical Support Specialist",
-    "company": "Galooli",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "Customer Technical Support Specialist at Galooli — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/customer-technical-support-specialist-at-galooli-4471592840",
-    "postedAt": "2026-10-15"
   },
   {
     "id": "linkedin-4478109249",
@@ -704,26 +649,114 @@
     "postedAt": "2026-10-13"
   },
   {
-    "id": "linkedin-4477903496",
+    "id": "linkedin-4477310618",
     "source": "LinkedIn",
-    "title": "Embedded Systems & Runtime Protection - Physical AI Team",
-    "company": "Lenovo",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "Embedded Systems & Runtime Protection - Physical AI Team at Lenovo — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Control System Specialist",
+    "company": "Chevron",
+    "location": "Herzliya, Tel Aviv District, Israel",
+    "description": "Control System Specialist at Chevron — Herzliya, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/embedded-systems-runtime-protection-physical-ai-team-at-lenovo-4477903496",
-    "postedAt": "2026-10-12"
+    "url": "https://il.linkedin.com/jobs/view/control-system-specialist-at-chevron-4477310618",
+    "postedAt": "2026-10-15"
   },
   {
-    "id": "linkedin-4475698756",
+    "id": "linkedin-4480307698",
     "source": "LinkedIn",
-    "title": "Field Application Engineer - Xilinx/AMD - Israel",
-    "company": "Redline Group - Specialist Recruitment for Technology & Electronics Companies",
-    "location": "Tel Aviv District, Israel",
-    "description": "Field Application Engineer - Xilinx/AMD - Israel at Redline Group - Specialist Recruitment for Technology & Electronics Companies — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "מהנדס בקרה",
+    "company": "Unknown company",
+    "location": "Be'er Sheva, South District, Israel",
+    "description": "מהנדס בקרה at Unknown company — Be'er Sheva, South District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/field-application-engineer-xilinx-amd-israel-at-redline-group-specialist-recruitment-for-technology-electronics-companies-4475698756",
-    "postedAt": "2026-10-12"
+    "url": "https://www.linkedin.com/jobs/view/4480307698",
+    "postedAt": "2026-10-16"
+  },
+  {
+    "id": "linkedin-4471592840",
+    "source": "LinkedIn",
+    "title": "Customer Technical Support Specialist",
+    "company": "Galooli",
+    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+    "description": "Customer Technical Support Specialist at Galooli — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/customer-technical-support-specialist-at-galooli-4471592840",
+    "postedAt": "2026-10-15"
+  },
+  {
+    "id": "linkedin-4480897071",
+    "source": "LinkedIn",
+    "title": "Motion Control – RT Embedded Engineer",
+    "company": "Servotronix Motion Control",
+    "location": "Petah Tikva, Center District, Israel",
+    "description": "Motion Control – RT Embedded Engineer at Servotronix Motion Control — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/motion-control-%E2%80%93-rt-embedded-engineer-at-servotronix-motion-control-4480897071",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "id": "linkedin-4468229341",
+    "source": "LinkedIn",
+    "title": "Manufacturing Systems Specialist",
+    "company": "Delta Galil Industries",
+    "location": "Caesarea, Haifa District, Israel",
+    "description": "Manufacturing Systems Specialist at Delta Galil Industries — Caesarea, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/manufacturing-systems-specialist-at-delta-galil-industries-4468229341",
+    "postedAt": "2026-10-17"
+  },
+  {
+    "id": "linkedin-4478211477",
+    "source": "LinkedIn",
+    "title": "Head of Marketing",
+    "company": "Tessera Inc. (Formerly BiomX Inc.) NYSE: HLSQ",
+    "location": "Netanya, Center District, Israel",
+    "description": "Head of Marketing at Tessera Inc. (Formerly BiomX Inc.) NYSE: HLSQ — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/head-of-marketing-at-tessera-inc-formerly-biomx-inc-nyse-hlsq-4478211477",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "id": "linkedin-4449536952",
+    "source": "LinkedIn",
+    "title": "R&D Motion Control Engineer",
+    "company": "KLA",
+    "location": "Migdal HaEmeq, North District, Israel",
+    "description": "R&D Motion Control Engineer at KLA — Migdal HaEmeq, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/r-d-motion-control-engineer-at-kla-4449536952",
+    "postedAt": "2026-10-14"
+  },
+  {
+    "id": "linkedin-4478463708",
+    "source": "LinkedIn",
+    "title": "Production Controller",
+    "company": "Credo",
+    "location": "Modiin-Maccabim-Reut, Center District, Israel",
+    "description": "Production Controller at Credo — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/production-controller-at-credo-4478463708",
+    "postedAt": "2026-10-14"
+  },
+  {
+    "id": "linkedin-4480894119",
+    "source": "LinkedIn",
+    "title": "Realtime Embedded Software Engineer",
+    "company": "Servotronix Motion Control",
+    "location": "Petah Tikva, Center District, Israel",
+    "description": "Realtime Embedded Software Engineer at Servotronix Motion Control — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/realtime-embedded-software-engineer-at-servotronix-motion-control-4480894119",
+    "postedAt": "2026-10-18"
+  },
+  {
+    "id": "linkedin-4422736015",
+    "source": "LinkedIn",
+    "title": "מהנדס.ת תהליך",
+    "company": "Elbit Systems Israel",
+    "location": "Ramla, Center District, Israel",
+    "description": "מהנדס.ת תהליך at Elbit Systems Israel — Ramla, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%9E%D7%94%D7%A0%D7%93%D7%A1-%D7%AA-%D7%AA%D7%94%D7%9C%D7%99%D7%9A-at-elbit-systems-israel-4422736015",
+    "postedAt": "2026-10-18"
   },
   {
     "id": "linkedin-4421590651",
@@ -748,6 +781,17 @@
     "postedAt": "2026-10-14"
   },
   {
+    "id": "linkedin-4480971528",
+    "source": "LinkedIn",
+    "title": "Manufacturing Process Engineer",
+    "company": "Rigaku Semiconductor Instruments",
+    "location": "Migdal HaEmek, North District, Israel",
+    "description": "Manufacturing Process Engineer at Rigaku Semiconductor Instruments — Migdal HaEmek, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/manufacturing-process-engineer-at-rigaku-semiconductor-instruments-4480971528",
+    "postedAt": "2026-10-19"
+  },
+  {
     "id": "linkedin-4480327803",
     "source": "LinkedIn",
     "title": "Senior Manufacturing Engineer",
@@ -757,6 +801,17 @@
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/senior-manufacturing-engineer-at-medtronic-4480327803",
     "postedAt": "2026-10-16"
+  },
+  {
+    "id": "linkedin-4480902530",
+    "source": "LinkedIn",
+    "title": "Industrial & Management Engineer",
+    "company": "Doona",
+    "location": "Herzliya, Tel Aviv District, Israel",
+    "description": "Industrial & Management Engineer at Doona — Herzliya, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/industrial-management-engineer-at-doona-4480902530",
+    "postedAt": "2026-10-18"
   },
   {
     "id": "linkedin-4451477584",
@@ -803,17 +858,6 @@
     "postedAt": "2026-10-14"
   },
   {
-    "id": "linkedin-4466240678",
-    "source": "LinkedIn",
-    "title": "Industrial Engineer",
-    "company": "Applied Materials - Israel",
-    "location": "Rehovot, Center District, Israel",
-    "description": "Industrial Engineer at Applied Materials - Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/industrial-engineer-at-applied-materials-israel-4466240678",
-    "postedAt": "2026-10-16"
-  },
-  {
     "id": "linkedin-4477983775",
     "source": "LinkedIn",
     "title": "NPI & System Product Engineer",
@@ -822,28 +866,6 @@
     "description": "NPI & System Product Engineer at DriveNets — Raanana, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
     "url": "https://il.linkedin.com/jobs/view/npi-system-product-engineer-at-drivenets-4477983775",
-    "postedAt": "2026-10-13"
-  },
-  {
-    "id": "linkedin-4477525136",
-    "source": "LinkedIn",
-    "title": "Product Leader",
-    "company": "Nova Ltd.",
-    "location": "Rehovot, Center District, Israel",
-    "description": "Product Leader at Nova Ltd. — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/product-leader-at-nova-ltd-4477525136",
-    "postedAt": "2026-10-14"
-  },
-  {
-    "id": "linkedin-4476095859",
-    "source": "LinkedIn",
-    "title": "טכנולוג/ית ייצור | Manufacturing Technologist | 244451",
-    "company": "Experis",
-    "location": "Kiryat Gat, South District, Israel",
-    "description": "טכנולוג/ית ייצור | Manufacturing Technologist | 244451 at Experis — Kiryat Gat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/%D7%98%D7%9B%D7%A0%D7%95%D7%9C%D7%95%D7%92-%D7%99%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-manufacturing-technologist-244451-at-experis-4476095859",
     "postedAt": "2026-10-13"
   },
   {
@@ -858,6 +880,17 @@
     "postedAt": "2026-10-18"
   },
   {
+    "id": "linkedin-4432767372",
+    "source": "LinkedIn",
+    "title": "NPI Product Expert Team Leader",
+    "company": "Elbit Systems Israel",
+    "location": "Netanya, Center District, Israel",
+    "description": "NPI Product Expert Team Leader at Elbit Systems Israel — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/npi-product-expert-team-leader-at-elbit-systems-israel-4432767372",
+    "postedAt": "2026-10-18"
+  },
+  {
     "id": "linkedin-4479509589",
     "source": "LinkedIn",
     "title": "Backend & Cloud Infrastructure Team Lead (Node.js / AWS)",
@@ -869,70 +902,15 @@
     "postedAt": "2026-10-14"
   },
   {
-    "id": "linkedin-4433644983",
-    "source": "LinkedIn",
-    "title": "Development Team Leader",
-    "company": "Fiverr",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "Development Team Leader at Fiverr — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/development-team-leader-at-fiverr-4433644983",
-    "postedAt": "2026-10-14"
-  },
-  {
-    "id": "linkedin-4428470164",
-    "source": "LinkedIn",
-    "title": "NOC Team Leader",
-    "company": "Rapyd",
-    "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-    "description": "NOC Team Leader at Rapyd — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/noc-team-leader-at-rapyd-4428470164",
-    "postedAt": "2026-10-16"
-  },
-  {
-    "id": "linkedin-4469737028",
-    "source": "LinkedIn",
-    "title": "Manager Technical Operations",
-    "company": "Oracle",
-    "location": "Petah Tikva, Center District, Israel",
-    "description": "Manager Technical Operations at Oracle — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/manager-technical-operations-at-oracle-4469737028",
-    "postedAt": "2026-10-16"
-  },
-  {
-    "id": "linkedin-4468229341",
-    "source": "LinkedIn",
-    "title": "Manufacturing Systems Specialist",
-    "company": "Delta Galil Industries",
-    "location": "Caesarea, Haifa District, Israel",
-    "description": "Manufacturing Systems Specialist at Delta Galil Industries — Caesarea, Haifa District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/manufacturing-systems-specialist-at-delta-galil-industries-4468229341",
-    "postedAt": "2026-10-17"
-  },
-  {
-    "id": "linkedin-4476657115",
-    "source": "LinkedIn",
-    "title": "T4EA Integration Developer & Implementer",
-    "company": "Logica-IT",
-    "location": "Lod, Center District, Israel",
-    "description": "T4EA Integration Developer & Implementer at Logica-IT — Lod, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/t4ea-integration-developer-implementer-at-logica-it-4476657115",
-    "postedAt": "2026-10-14"
-  },
-  {
-    "id": "linkedin-4479826862",
+    "id": "linkedin-4480961902",
     "source": "LinkedIn",
     "title": "Integration Systems Developer (37520)",
     "company": "מרטנס | Mertens – מקבוצת מלם תים",
     "location": "Center District, Israel",
     "description": "Integration Systems Developer (37520) at מרטנס | Mertens – מקבוצת מלם תים — Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/integration-systems-developer-37520-at-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1-mertens-%E2%80%93-%D7%9E%D7%A7%D7%91%D7%95%D7%A6%D7%AA-%D7%9E%D7%9C%D7%9D-%D7%AA%D7%99%D7%9D-4479826862",
-    "postedAt": "2026-10-15"
+    "url": "https://il.linkedin.com/jobs/view/integration-systems-developer-37520-at-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1-mertens-%E2%80%93-%D7%9E%D7%A7%D7%91%D7%95%D7%A6%D7%AA-%D7%9E%D7%9C%D7%9D-%D7%AA%D7%99%D7%9D-4480961902",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4477325359",
@@ -957,17 +935,6 @@
     "postedAt": "2026-10-15"
   },
   {
-    "id": "linkedin-4466833953",
-    "source": "LinkedIn",
-    "title": "SAP Technical Analyst",
-    "company": "Tower Semiconductor",
-    "location": "Migdal HaEmek, North District, Israel",
-    "description": "SAP Technical Analyst at Tower Semiconductor — Migdal HaEmek, North District, Israel. Open the LinkedIn posting for the full description and apply.",
-    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/sap-technical-analyst-at-tower-semiconductor-4466833953",
-    "postedAt": "2026-10-13"
-  },
-  {
     "id": "linkedin-4469716514",
     "source": "LinkedIn",
     "title": "System Integration Engineer",
@@ -990,15 +957,37 @@
     "postedAt": "2026-10-18"
   },
   {
-    "id": "linkedin-4475687820",
+    "id": "linkedin-4431596962",
     "source": "LinkedIn",
-    "title": "Technical Project Manager",
-    "company": "Mobisoft",
+    "title": "Senior System Engineer",
+    "company": "MSD",
     "location": "Netanya, Center District, Israel",
-    "description": "Technical Project Manager at Mobisoft — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "description": "Senior System Engineer at MSD — Netanya, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/technical-project-manager-at-mobisoft-4475687820",
-    "postedAt": "2026-10-12"
+    "url": "https://il.linkedin.com/jobs/view/senior-system-engineer-at-msd-4431596962",
+    "postedAt": "2026-10-14"
+  },
+  {
+    "id": "linkedin-4460758474",
+    "source": "LinkedIn",
+    "title": "Systems Integration Engineer",
+    "company": "KLA",
+    "location": "Migdal HaEmeq, North District, Israel",
+    "description": "Systems Integration Engineer at KLA — Migdal HaEmeq, North District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/systems-integration-engineer-at-kla-4460758474",
+    "postedAt": "2026-10-17"
+  },
+  {
+    "id": "linkedin-4456348004",
+    "source": "LinkedIn",
+    "title": "CNC Tech",
+    "company": "Implant Direct",
+    "location": "Modiin-Maccabim-Reut, Center District, Israel",
+    "description": "CNC Tech at Implant Direct — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/cnc-tech-at-implant-direct-4456348004",
+    "postedAt": "2026-10-19"
   },
   {
     "id": "linkedin-4439699241",
@@ -1012,14 +1001,47 @@
     "postedAt": "2026-10-13"
   },
   {
-    "id": "linkedin-4478799021",
+    "id": "linkedin-4469343005",
     "source": "LinkedIn",
-    "title": "Process Engineer",
-    "company": "Vishay Precision Group, Inc. (VPG)",
-    "location": "Holon, Tel Aviv District, Israel",
-    "description": "Process Engineer at Vishay Precision Group, Inc. (VPG) — Holon, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "title": "Senior Software & AI Engineer",
+    "company": "Applied Materials - Israel",
+    "location": "Rehovot, Center District, Israel",
+    "description": "Senior Software & AI Engineer at Applied Materials - Israel — Rehovot, Center District, Israel. Open the LinkedIn posting for the full description and apply.",
     "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
-    "url": "https://il.linkedin.com/jobs/view/process-engineer-at-vishay-precision-group-inc-vpg-4478799021",
+    "url": "https://il.linkedin.com/jobs/view/senior-software-ai-engineer-at-applied-materials-israel-4469343005",
+    "postedAt": "2026-10-15"
+  },
+  {
+    "id": "linkedin-4467284044",
+    "source": "LinkedIn",
+    "title": "Senior Product Engineer",
+    "company": "Xsight Labs",
+    "location": "Givatayim, Tel Aviv District, Israel",
+    "description": "Senior Product Engineer at Xsight Labs — Givatayim, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/senior-product-engineer-at-xsight-labs-4467284044",
+    "postedAt": "2026-10-14"
+  },
+  {
+    "id": "linkedin-4477073987",
+    "source": "LinkedIn",
+    "title": "2459 - Senior Mechanical Engineer",
+    "company": "Shabak - Israeli Security Agency - Career",
+    "location": "Tel Aviv District, Israel",
+    "description": "2459 - Senior Mechanical Engineer at Shabak - Israeli Security Agency - Career — Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/2459-senior-mechanical-engineer-at-shabak-israeli-security-agency-career-4477073987",
+    "postedAt": "2026-10-15"
+  },
+  {
+    "id": "linkedin-4476095859",
+    "source": "LinkedIn",
+    "title": "טכנולוג/ית ייצור | Manufacturing Technologist | 244451",
+    "company": "Experis",
+    "location": "Kiryat Gat, South District, Israel",
+    "description": "טכנולוג/ית ייצור | Manufacturing Technologist | 244451 at Experis — Kiryat Gat, South District, Israel. Open the LinkedIn posting for the full description and apply.",
+    "requirements": "See the full LinkedIn posting for requirements and Easy Apply / Apply.",
+    "url": "https://il.linkedin.com/jobs/view/%D7%98%D7%9B%D7%A0%D7%95%D7%9C%D7%95%D7%92-%D7%99%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-manufacturing-technologist-244451-at-experis-4476095859",
     "postedAt": "2026-10-13"
   }
 ]

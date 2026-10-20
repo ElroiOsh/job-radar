@@ -45,14 +45,36 @@ async function main(): Promise<void> {
   const feedback = loadFeedback();
   const learned = feedbackSummary(feedback);
 
+async function fetchOrEmpty(
+  name: string,
+  fn: () => Promise<Raw[]>,
+  ms = 50_000
+): Promise<Raw[]> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    const result = await Promise.race([
+      fn(),
+      new Promise<Raw[]>((_, reject) => {
+        timer = setTimeout(() => reject(new Error(`${name} timed out after ${ms / 1000}s`)), ms);
+      }),
+    ]);
+    return result;
+  } catch (err) {
+    console.warn(`${name} failed:`, err instanceof Error ? err.message : err);
+    return [];
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
   let raw: Raw[] = [];
   if (!skipFetch) {
     const [linkedin, alljobs, jobmaster, adzuna, jooble] = await Promise.all([
-      fetchLinkedInGuest(profile),
-      fetchAllJobs(profile),
-      fetchJobMaster(profile),
-      fetchAdzuna(profile),
-      fetchJooble(profile),
+      fetchOrEmpty("LinkedIn", () => fetchLinkedInGuest(profile), 70_000),
+      fetchOrEmpty("AllJobs", () => fetchAllJobs(profile), 50_000),
+      fetchOrEmpty("JobMaster", () => fetchJobMaster(profile), 40_000),
+      fetchOrEmpty("Adzuna", () => fetchAdzuna(profile), 20_000),
+      fetchOrEmpty("Jooble", () => fetchJooble(profile), 20_000),
     ]);
     // Prefer freshly fetched boards; fall back to last saved file if everything empty
     const liveFallback =
