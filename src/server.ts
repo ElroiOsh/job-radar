@@ -75,6 +75,11 @@ const server = createServer(async (req, res) => {
     return;
   }
 
+  if (url.pathname === "/api/health" && req.method === "GET") {
+    send(res, 200, JSON.stringify({ ok: true, live: true }), "application/json; charset=utf-8");
+    return;
+  }
+
   if ((url.pathname === "/api/scan" || url.pathname === "/api/refresh") && (req.method === "POST" || req.method === "GET")) {
     try {
       const payload = await handleScan();
@@ -162,7 +167,8 @@ const server = createServer(async (req, res) => {
   send(res, 200, readFileSync(filePath, "utf8"), type);
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`RADAR live search: http://localhost:${PORT}`);
+  console.log("On this Wi-Fi, open http://<this-pc-ip>:" + PORT + " from your phone.");
   console.log("Refresh the page (or Search now) to scan LinkedIn, AllJobs, JobMaster.");
 });

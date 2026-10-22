@@ -483,8 +483,7 @@ export function renderDashboard(
   </main>
 
   <footer>
-    RADAR for ${esc(profile.candidate.name)} ·
-    Open <strong>http://localhost:8787</strong> — refresh to search.
+    RADAR for ${esc(profile.candidate.name)}
   </footer>
 
   <div id="scan-overlay" hidden>
@@ -729,19 +728,31 @@ export function renderDashboard(
 
     bindAllJobs();
 
-    const live = location.hostname === "localhost" || location.hostname === "127.0.0.1";
     const overlay = document.getElementById("scan-overlay");
     const scanStatus = document.getElementById("scan-status");
     const btnScan = document.getElementById("btn-scan");
     const heroLead = document.getElementById("hero-lead");
     let scanning = false;
+    let live = false;
+
+    async function apiAvailable() {
+      try {
+        const res = await fetch("/api/health", { signal: AbortSignal.timeout(2500) });
+        const data = await res.json();
+        return res.ok && data && data.ok;
+      } catch {
+        return false;
+      }
+    }
 
     async function startScan(reason) {
-      if (!live) {
-        if (hint) hint.textContent = "Live search runs only at http://localhost:8787 — open RADAR on this PC.";
+      if (scanning) return;
+      if (!(await apiAvailable())) {
+        if (hint) hint.textContent = "Showing the last saved shortlist. Search now reloads it. For a live scan, keep RADAR running on the PC and open this same address.";
+        location.reload();
         return;
       }
-      if (scanning) return;
+      live = true;
       scanning = true;
       if (overlay) overlay.hidden = false;
       if (scanStatus) scanStatus.textContent = reason === "refresh" ? "Refreshing boards…" : "Searching LinkedIn, AllJobs, JobMaster…";
@@ -769,16 +780,12 @@ export function renderDashboard(
       }
     }
 
-    if (live) {
-      if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
-      startScan("refresh");
-    } else {
-      if (btnScan) {
-        btnScan.textContent = "Reload latest";
-        btnScan.addEventListener("click", () => location.reload());
-      }
-      if (hint) hint.textContent = "Phone link: this page is the latest saved shortlist. It cannot search LinkedIn from GitHub. On your PC, open http://localhost:8787 and refresh to scan.";
-    }
+    if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
+    apiAvailable().then((ok) => {
+      live = ok;
+      if (ok) startScan("refresh");
+      else if (hint) hint.textContent = "Last saved shortlist. Search now reloads this page. Live scan runs wherever the RADAR server is open (PC or phone on the same Wi-Fi).";
+    });
   </script>
 </body>
 </html>`;
