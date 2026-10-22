@@ -35,8 +35,8 @@
     a { color: var(--signal-deep); }
     .hero {
       position: relative;
-      min-height: 72vh;
-      min-height: 72dvh;
+      min-height: 38vh;
+      min-height: 38dvh;
       display: grid;
       align-content: end;
       padding: clamp(1.25rem, 3vw, 2.5rem);
@@ -48,9 +48,13 @@
       position: absolute;
       inset: 0;
       z-index: -2;
-      background:
+      background-color: #0e1614;
+      background-image:
         linear-gradient(180deg, rgba(14,22,20,0.25) 0%, rgba(14,22,20,0.72) 55%, rgba(14,22,20,0.92) 100%),
-        url("assets/hero-smart-factory.jpg") center/cover no-repeat;
+        url("assets/hero-smart-factory.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .brand {
       font-family: Sora, sans-serif;
@@ -150,6 +154,7 @@
     .job h3 a { color: inherit; text-decoration: none; }
     .job h3 a:hover { color: var(--signal-deep); }
     .company { margin: 0.35rem 0 0; color: var(--muted); }
+    .blurb { margin: 0.45rem 0 0; color: var(--ink); line-height: 1.45; font-size: 0.92rem; }
     .job-actions {
       display: flex; flex-wrap: wrap; align-items: center;
       justify-content: space-between; gap: 0.85rem; margin-top: 0.9rem;
@@ -234,7 +239,7 @@
     <div class="hero-media" aria-hidden="true"></div>
     <p class="brand">RADAR<span>.</span></p>
     <h2>New roles for your track</h2>
-    <p class="lead" id="hero-lead">Smart Manufacturing, systems, engineering leadership — Center &amp; Shfela. Updated Thursday, 22 October 2026 at 14:05.</p>
+    <p class="lead" id="hero-lead">Smart Manufacturing, systems, engineering leadership — Center &amp; Shfela. Updated Thursday, 22 October 2026 at 14:06.</p>
     <div class="hero-actions">
       <button type="button" class="btn btn-primary" id="btn-scan">Search now</button>
       <a class="btn btn-ghost" href="#inbox">New jobs</a>
@@ -273,6 +278,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/lead-engineer-test-systems-and-automation-at-dustphotonics-4479461081" target="_blank" rel="noopener noreferrer">Lead Engineer, Test Systems and Automation</a></h3>
       <p class="company">DustPhotonics · Modiin-Maccabim-Reut, Center District, Israel</p>
+      <p class="blurb">Lead Engineer, Test Systems and Automation at DustPhotonics — Modiin-Maccabim-Reut, Center District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/lead-engineer-test-systems-and-automation-at-dustphotonics-4479461081" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -302,6 +308,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/automation-development-engineer-at-experis-israel-4478670529" target="_blank" rel="noopener noreferrer">Automation Development Engineer</a></h3>
       <p class="company">Experis Israel · Petah Tikva, Center District, Israel</p>
+      <p class="blurb">Automation Development Engineer at Experis Israel — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/automation-development-engineer-at-experis-israel-4478670529" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -331,6 +338,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/production-manager-at-jobsseek-4482463387" target="_blank" rel="noopener noreferrer">Production Manager</a></h3>
       <p class="company">JobsSeek · Kfar Saba, Center District, Israel</p>
+      <p class="blurb">Production Manager at JobsSeek — Kfar Saba, Center District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/production-manager-at-jobsseek-4482463387" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -360,6 +368,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/production-manager-at-airobotics-4480450078" target="_blank" rel="noopener noreferrer">Production Manager</a></h3>
       <p class="company">Airobotics · Petah Tikva, Center District, Israel</p>
+      <p class="blurb">Production Manager at Airobotics — Petah Tikva, Center District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/production-manager-at-airobotics-4480450078" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -389,6 +398,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/senior-information-systems-engineer-ai-automation-at-mobileye-4471906465" target="_blank" rel="noopener noreferrer">Senior Information Systems Engineer AI &amp; Automation</a></h3>
       <p class="company">Mobileye · Jerusalem District, Israel</p>
+      <p class="blurb">Senior Information Systems Engineer AI &amp; Automation at Mobileye — Jerusalem District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/senior-information-systems-engineer-ai-automation-at-mobileye-4471906465" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -418,6 +428,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/implementation-consultant-mes-at-siemens-digital-industries-software-4480788987" target="_blank" rel="noopener noreferrer">Implementation Consultant (MES)</a></h3>
       <p class="company">Siemens Digital Industries Software · Tel Aviv-Yafo, Tel Aviv District, Israel</p>
+      <p class="blurb">Implementation Consultant (MES) at Siemens Digital Industries Software — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/implementation-consultant-mes-at-siemens-digital-industries-software-4480788987" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -447,6 +458,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/production-quality-engineer-at-mobileye-4480785807" target="_blank" rel="noopener noreferrer">Production Quality Engineer</a></h3>
       <p class="company">Mobileye · Tel Aviv-Yafo, Tel Aviv District, Israel</p>
+      <p class="blurb">Production Quality Engineer at Mobileye — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/production-quality-engineer-at-mobileye-4480785807" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -476,6 +488,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/industrial-automation-control-engineer-at-frisimos-technologies-ltd-4478276124" target="_blank" rel="noopener noreferrer">Industrial Automation Control Engineer</a></h3>
       <p class="company">Frisimos Technologies Ltd. · Kadima, Center District, Israel</p>
+      <p class="blurb">Industrial Automation Control Engineer at Frisimos Technologies Ltd. — Kadima, Center District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/industrial-automation-control-engineer-at-frisimos-technologies-ltd-4478276124" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -505,6 +518,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/priority-erp-implementer-system-analyst-at-topgum-industries-4480112482" target="_blank" rel="noopener noreferrer">Priority ERP Implementer &amp; System Analyst</a></h3>
       <p class="company">TopGum Industries · Ramat Gan, Tel Aviv District, Israel</p>
+      <p class="blurb">Priority ERP Implementer &amp; System Analyst at TopGum Industries — Ramat Gan, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/priority-erp-implementer-system-analyst-at-topgum-industries-4480112482" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -534,6 +548,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/production-team-leader-at-exodigo-4480931960" target="_blank" rel="noopener noreferrer">Production Team Leader</a></h3>
       <p class="company">Exodigo · Tel Aviv-Yafo, Tel Aviv District, Israel</p>
+      <p class="blurb">Production Team Leader at Exodigo — Tel Aviv-Yafo, Tel Aviv District, Israel. Open the LinkedIn posting for the full description and apply.</p>
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/production-team-leader-at-exodigo-4480931960" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -568,6 +583,7 @@
       </div>
       <h3><a href="https://il.linkedin.com/jobs/view/%D7%9E%D7%98%D7%9E%D7%99%D7%A2-%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%9C%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%A8%D7%A6%D7%A4%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-tulip-composable-mes-at-systematics-ltd-solutions-at-work-4478859110" target="_blank" rel="noopener noreferrer">MES Implementer — Tulip Composable MES (מטמיע/ת מערכת לניהול רצפת ייצור)</a></h3>
       <p class="company">Systematics Ltd. · Tel Aviv District, Israel</p>
+      
     </header>
     <div class="job-actions">
       <a class="job-cta" href="https://il.linkedin.com/jobs/view/%D7%9E%D7%98%D7%9E%D7%99%D7%A2-%D7%AA-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%9C%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%A8%D7%A6%D7%A4%D7%AA-%D7%99%D7%99%D7%A6%D7%95%D7%A8-tulip-composable-mes-at-systematics-ltd-solutions-at-work-4478859110" target="_blank" rel="noopener noreferrer">Apply on LinkedIn →</a>
@@ -921,9 +937,16 @@
       }
     }
 
-    if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
-    if (live) startScan("refresh");
-    else if (hint) hint.textContent = "This GitHub snapshot is static. For a live search open http://localhost:8787 on your PC.";
+    if (live) {
+      if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
+      startScan("refresh");
+    } else {
+      if (btnScan) {
+        btnScan.textContent = "Reload latest";
+        btnScan.addEventListener("click", () => location.reload());
+      }
+      if (hint) hint.textContent = "Phone link: this page is the latest saved shortlist. It cannot search LinkedIn from GitHub. On your PC, open http://localhost:8787 and refresh to scan.";
+    }
   </script>
 </body>
 </html>
