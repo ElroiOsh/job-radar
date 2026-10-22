@@ -73,6 +73,11 @@ function jobArticle(job: Job, mode: "new" | "rated"): string {
       </div>
       <h3><a href="${esc(job.url)}" target="_blank" rel="noopener noreferrer">${esc(job.title)}</a></h3>
       <p class="company">${esc(job.company)} · ${esc(job.location)}${job.salary ? ` · <strong>${esc(job.salary)}</strong>` : ""}</p>
+      ${
+        job.description
+          ? `<p class="blurb">${esc(job.description.slice(0, 180))}${job.description.length > 180 ? "…" : ""}</p>`
+          : ""
+      }
     </header>
     <div class="job-actions">
       <a class="job-cta" href="${esc(job.url)}" target="_blank" rel="noopener noreferrer">${
@@ -208,8 +213,8 @@ export function renderDashboard(
     a { color: var(--signal-deep); }
     .hero {
       position: relative;
-      min-height: 72vh;
-      min-height: 72dvh;
+      min-height: 38vh;
+      min-height: 38dvh;
       display: grid;
       align-content: end;
       padding: clamp(1.25rem, 3vw, 2.5rem);
@@ -221,9 +226,13 @@ export function renderDashboard(
       position: absolute;
       inset: 0;
       z-index: -2;
-      background:
+      background-color: #0e1614;
+      background-image:
         linear-gradient(180deg, rgba(14,22,20,0.25) 0%, rgba(14,22,20,0.72) 55%, rgba(14,22,20,0.92) 100%),
-        url("assets/hero-smart-factory.jpg") center/cover no-repeat;
+        url("assets/hero-smart-factory.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .brand {
       font-family: Sora, sans-serif;
@@ -323,6 +332,7 @@ export function renderDashboard(
     .job h3 a { color: inherit; text-decoration: none; }
     .job h3 a:hover { color: var(--signal-deep); }
     .company { margin: 0.35rem 0 0; color: var(--muted); }
+    .blurb { margin: 0.45rem 0 0; color: var(--ink); line-height: 1.45; font-size: 0.92rem; }
     .job-actions {
       display: flex; flex-wrap: wrap; align-items: center;
       justify-content: space-between; gap: 0.85rem; margin-top: 0.9rem;
@@ -759,9 +769,16 @@ export function renderDashboard(
       }
     }
 
-    if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
-    if (live) startScan("refresh");
-    else if (hint) hint.textContent = "This GitHub snapshot is static. For a live search open http://localhost:8787 on your PC.";
+    if (live) {
+      if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
+      startScan("refresh");
+    } else {
+      if (btnScan) {
+        btnScan.textContent = "Reload latest";
+        btnScan.addEventListener("click", () => location.reload());
+      }
+      if (hint) hint.textContent = "Phone link: this page is the latest saved shortlist. It cannot search LinkedIn from GitHub. On your PC, open http://localhost:8787 and refresh to scan.";
+    }
   </script>
 </body>
 </html>`;
