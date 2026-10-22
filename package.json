@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "daily": "tsx src/run-daily.ts",
-    "build-web": "tsx src/run-daily.ts --skip-fetch --skip-email",
-    "demo": "tsx src/run-daily.ts --demo --skip-email",
-    "refresh-live": "node scripts/build-live-jobs.mjs && tsx src/run-daily.ts --skip-email",
+    "build-web": "tsx src/run-daily.ts --skip-fetch",
+    "demo": "tsx src/run-daily.ts --demo",
     "serve": "tsx src/server.ts",
     "typecheck": "tsc --noEmit"
   },

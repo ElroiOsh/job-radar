@@ -1,8 +1,8 @@
-# Run once per day when the PC is opened (logon).
-# Skips automatically if already succeeded today (data/last-success-day.txt).
+# Start the local RADAR dashboard on logon (live search on page refresh).
+# No email - the page is the daily workflow.
 
 $taskName = "JobRadarDaily"
-$script = Join-Path $PSScriptRoot "run-daily.ps1"
+$script = Join-Path $PSScriptRoot "start-radar.ps1"
 $workDir = Split-Path $PSScriptRoot -Parent
 
 $action = New-ScheduledTaskAction `
@@ -11,14 +11,12 @@ $action = New-ScheduledTaskAction `
   -WorkingDirectory $workDir
 
 $triggerLogon = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
-$triggerMorning = New-ScheduledTaskTrigger -Daily -At 8:00AM
 
 $settings = New-ScheduledTaskSettingsSet `
   -AllowStartIfOnBatteries `
   -DontStopIfGoingOnBatteries `
   -StartWhenAvailable `
-  -WakeToRun `
-  -ExecutionTimeLimit (New-TimeSpan -Hours 1)
+  -ExecutionTimeLimit (New-TimeSpan -Minutes 5)
 
 $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel Limited
 
@@ -26,14 +24,23 @@ Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction Silent
 Register-ScheduledTask `
   -TaskName $taskName `
   -Action $action `
-  -Trigger @($triggerLogon, $triggerMorning) `
+  -Trigger $triggerLogon `
   -Settings $settings `
   -Principal $principal `
-  -Description "Job Radar: on logon (+ 08:00 backup), once per day" | Out-Null
+  -Description "Job Radar: open live dashboard on logon. Refresh the page to search." | Out-Null
 
-Write-Host "Scheduled task JobRadarDaily ready:"
-Write-Host "  - At logon (when you open/sign into the PC)"
-Write-Host "  - Daily 08:00 backup if PC is already on"
-Write-Host "  - At most once per calendar day"
+$desktop = [Environment]::GetFolderPath("Desktop")
+$lnk = Join-Path $desktop "RADAR Jobs.lnk"
+$w = New-Object -ComObject WScript.Shell
+$sc = $w.CreateShortcut($lnk)
+$sc.TargetPath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+$sc.Arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$script`""
+$sc.WorkingDirectory = $workDir
+$sc.Description = "Open RADAR - refresh the page to search jobs"
+$sc.Save()
+
+Write-Host "RADAR is now a live page, not an email:"
+Write-Host "  Open http://localhost:8787  (or the Desktop shortcut RADAR Jobs)"
+Write-Host "  Refresh = search LinkedIn + AllJobs + JobMaster"
+Write-Host "  Task JobRadarDaily opens it at logon"
 Get-ScheduledTask -TaskName $taskName | Format-List TaskName, State
-Get-ScheduledTaskInfo -TaskName $taskName | Format-List NextRunTime, LastRunTime, LastTaskResult

@@ -1,8 +1,10 @@
+import "dotenv/config";
 import { createServer } from "node:http";
 import { readFileSync, existsSync } from "node:fs";
 import { join, extname } from "node:path";
 import { projectRoot } from "./profile.js";
 import { entryFromJob, feedbackSummary, loadFeedback, upsertFeedback } from "./feedback.js";
+import { runScan, type ScanPayload } from "./scan.js";
 import type { FeedbackReasonId } from "./reasons.js";
 import type { FeedbackVerdict, Job, RunResult } from "./types.js";
 
@@ -17,10 +19,13 @@ const MIME: Record<string, string> = {
   ".svg": "image/svg+xml",
   ".png": "image/png",
   ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
   ".ico": "image/x-icon",
 };
 
-function send(res: import("node:http").ServerResponse, status: number, body: string, type: string) {
+const BINARY = new Set([".png", ".jpg", ".jpeg", ".ico", ".gif", ".webp"]);
+
+function send(res: import("node:http").ServerResponse, status: number, body: string | Buffer, type: string) {
   res.writeHead(status, {
     "Content-Type": type,
     "Access-Control-Allow-Origin": "*",
@@ -50,11 +55,33 @@ function findJob(jobId: string): Job | undefined {
   }
 }
 
+let inFlight: Promise<ScanPayload> | null = null;
+
+async function handleScan(): Promise<ScanPayload> {
+  if (inFlight) return inFlight;
+  inFlight = runScan()
+    .then((r) => r.payload)
+    .finally(() => {
+      inFlight = null;
+    });
+  return inFlight;
+}
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url || "/", `http://localhost:${PORT}`);
 
   if (req.method === "OPTIONS") {
     send(res, 204, "", "text/plain");
+    return;
+  }
+
+  if ((url.pathname === "/api/scan" || url.pathname === "/api/refresh") && (req.method === "POST" || req.method === "GET")) {
+    try {
+      const payload = await handleScan();
+      send(res, 200, JSON.stringify(payload), "application/json; charset=utf-8");
+    } catch (err) {
+      send(res, 500, JSON.stringify({ error: String(err) }), "application/json; charset=utf-8");
+    }
     return;
   }
 
@@ -87,7 +114,7 @@ const server = createServer(async (req, res) => {
 
       const job = body.job || findJob(body.jobId);
       if (!job) {
-        send(res, 404, JSON.stringify({ error: "job not found — run npm run daily/demo first" }), "application/json");
+        send(res, 404, JSON.stringify({ error: "job not found — run a search first" }), "application/json");
         return;
       }
 
@@ -128,10 +155,14 @@ const server = createServer(async (req, res) => {
   }
 
   const type = MIME[extname(filePath)] || "application/octet-stream";
+  if (BINARY.has(extname(filePath).toLowerCase())) {
+    send(res, 200, readFileSync(filePath), type);
+    return;
+  }
   send(res, 200, readFileSync(filePath, "utf8"), type);
 });
 
 server.listen(PORT, () => {
-  console.log(`RADAR dashboard: http://localhost:${PORT}`);
-  console.log("Mark jobs Relevant / Not relevant — the agent learns from data/feedback.json");
+  console.log(`RADAR live search: http://localhost:${PORT}`);
+  console.log("Refresh the page (or Search now) to scan LinkedIn, AllJobs, JobMaster.");
 });

@@ -124,14 +124,11 @@ function ratedFromFeedback(entries: FeedbackEntry[]): Job[] {
   }));
 }
 
-export function renderDashboard(
+export function inboxFromResult(
   result: RunResult,
-  profile: Profile,
-  learned: { relevant: number; notRelevant: number } = { relevant: 0, notRelevant: 0 },
   feedbackEntries: FeedbackEntry[] = []
-): string {
+): { newJobs: Job[]; ratedJobs: Job[]; newHtml: string; ratedHtml: string; ratedCount: number } {
   const listings = result.jobs.filter((j) => !j.id.startsWith("board-"));
-  const boards = result.jobs.filter((j) => j.id.startsWith("board-"));
   const ratedIds = new Set(feedbackEntries.map((e) => e.jobId));
 
   const newJobs = listings.filter((j) => !j.userFeedback && !ratedIds.has(j.id));
@@ -146,6 +143,27 @@ export function renderDashboard(
     });
   }
   const ratedJobs = [...ratedJobsMap.values()];
+  return {
+    newJobs,
+    ratedJobs,
+    newHtml: newJobs.length
+      ? newJobs.map((j) => jobArticle(j, "new")).join("\n")
+      : `<div class="empty" id="empty-new">No new unrated jobs. Check Rated / viewed, or run Search now.</div>`,
+    ratedHtml: ratedJobs.length
+      ? ratedJobs.map((j) => jobArticle(j, "rated")).join("\n")
+      : `<div class="empty" id="empty-rated">No rated jobs yet. Rate something from New.</div>`,
+    ratedCount: ratedJobs.length,
+  };
+}
+
+export function renderDashboard(
+  result: RunResult,
+  profile: Profile,
+  learned: { relevant: number; notRelevant: number } = { relevant: 0, notRelevant: 0 },
+  feedbackEntries: FeedbackEntry[] = []
+): string {
+  const boards = result.jobs.filter((j) => j.id.startsWith("board-"));
+  const { newJobs, ratedJobs } = inboxFromResult(result, feedbackEntries);
 
   const dateLabel = new Date(result.generatedAt).toLocaleString("en-IL", {
     dateStyle: "full",
@@ -366,6 +384,22 @@ export function renderDashboard(
     .empty {
       padding: 1.5rem; border: 1px dashed var(--line); color: var(--muted);
     }
+    button.btn { cursor: pointer; font-family: inherit; }
+    #scan-overlay {
+      position: fixed; inset: 0; z-index: 40;
+      background: rgba(14,22,20,0.72);
+      display: grid; place-items: center;
+      padding: 1.5rem;
+    }
+    #scan-overlay[hidden] { display: none !important; }
+    .scan-card {
+      background: #f7faf8; color: var(--ink);
+      padding: 1.5rem 1.7rem; max-width: 28rem; width: 100%;
+      border: 1px solid var(--line);
+    }
+    .scan-card h3 { font-family: Sora, sans-serif; margin: 0 0 0.5rem; }
+    .scan-card p { margin: 0; color: var(--muted); line-height: 1.5; }
+    .scan-card .scan-status { margin-top: 0.75rem; font-weight: 700; color: var(--signal-deep); }
   </style>
 </head>
 <body>
@@ -373,10 +407,10 @@ export function renderDashboard(
     <div class="hero-media" aria-hidden="true"></div>
     <p class="brand">RADAR<span>.</span></p>
     <h2>New roles for your track</h2>
-    <p class="lead">Smart Manufacturing, systems, engineering leadership — Center &amp; Shfela. Updated ${esc(dateLabel)}.</p>
+    <p class="lead" id="hero-lead">Smart Manufacturing, systems, engineering leadership — Center &amp; Shfela. Updated ${esc(dateLabel)}.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#inbox">New jobs</a>
-      <a class="btn btn-ghost" href="#rated">Rated jobs</a>
+      <button type="button" class="btn btn-primary" id="btn-scan">Search now</button>
+      <a class="btn btn-ghost" href="#inbox">New jobs</a>
     </div>
   </header>
 
@@ -393,7 +427,7 @@ export function renderDashboard(
       </div>
     </div>
 
-    <p class="serve-hint" id="serve-hint">Mark Relevant or Not relevant, pick why, Save — the card slides out; you keep browsing New.</p>
+    <p class="serve-hint" id="serve-hint">Refresh this page (on the local RADAR) to scan LinkedIn, AllJobs, and JobMaster. Rate a role — it slides to Rated.</p>
 
     <div class="tabs" role="tablist" aria-label="Job lists">
       <button type="button" class="tab" role="tab" id="tab-new" aria-selected="true" aria-controls="panel-new">New <span id="count-new">(${newJobs.length})</span></button>
@@ -440,8 +474,16 @@ export function renderDashboard(
 
   <footer>
     RADAR for ${esc(profile.candidate.name)} ·
-    <a href="#rated">Rated jobs</a>
+    Open <strong>http://localhost:8787</strong> — refresh to search.
   </footer>
+
+  <div id="scan-overlay" hidden>
+    <div class="scan-card">
+      <h3>Searching boards</h3>
+      <p>LinkedIn, AllJobs, JobMaster — Center &amp; Shfela. Usually 20–40 seconds.</p>
+      <p class="scan-status" id="scan-status">Starting…</p>
+    </div>
+  </div>
 
   <script>
     const hint = document.getElementById("serve-hint");
@@ -660,21 +702,66 @@ export function renderDashboard(
       }
     }
 
-    document.querySelectorAll(".job").forEach(bindJob);
+    function bindAllJobs() {
+      document.querySelectorAll(".job").forEach(bindJob);
+      loadLocalFeedback().forEach((e) => {
+        const article = document.querySelector('.job[data-id="' + CSS.escape(e.jobId) + '"]');
+        if (!article) return;
+        if (article.dataset.list === "rated") {
+          setRatedBadge(article, e.verdict, labelReasons(e.reasons || []));
+          return;
+        }
+        moveToRated(article, e.verdict, e.reasons || [], false);
+      });
+      selectTab("new");
+      updateCounts();
+    }
 
-    // Move locally rated jobs out of New on load (stay on New)
-    loadLocalFeedback().forEach((e) => {
-      const article = document.querySelector('.job[data-id="' + CSS.escape(e.jobId) + '"]');
-      if (!article) return;
-      if (article.dataset.list === "rated") {
-        setRatedBadge(article, e.verdict, labelReasons(e.reasons || []));
+    bindAllJobs();
+
+    const live = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    const overlay = document.getElementById("scan-overlay");
+    const scanStatus = document.getElementById("scan-status");
+    const btnScan = document.getElementById("btn-scan");
+    const heroLead = document.getElementById("hero-lead");
+    let scanning = false;
+
+    async function startScan(reason) {
+      if (!live) {
+        if (hint) hint.textContent = "Live search runs only at http://localhost:8787 — open RADAR on this PC.";
         return;
       }
-      moveToRated(article, e.verdict, e.reasons || [], false);
-    });
+      if (scanning) return;
+      scanning = true;
+      if (overlay) overlay.hidden = false;
+      if (scanStatus) scanStatus.textContent = reason === "refresh" ? "Refreshing boards…" : "Searching LinkedIn, AllJobs, JobMaster…";
+      if (hint) hint.textContent = "Scanning job boards… stay on this page.";
+      try {
+        const res = await fetch("/api/scan", { method: "POST", signal: AbortSignal.timeout(180000) });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Scan failed");
+        newList.innerHTML = data.newHtml || "";
+        ratedList.innerHTML = data.ratedHtml || "";
+        bindAllJobs();
+        if (heroLead) {
+          heroLead.textContent = "Smart Manufacturing, systems, engineering leadership — Center & Shfela. Updated " + (data.dateLabel || "just now") + ".";
+        }
+        if (hint) {
+          hint.textContent = "Scan done — " + data.totalCount + " in shortlist (" + data.newCount + " newly seen). Rate to move a card to Rated.";
+        }
+        if (scanStatus) scanStatus.textContent = "Done.";
+      } catch (err) {
+        if (hint) hint.textContent = "Scan failed: " + (err && err.message ? err.message : err) + " — try Search now.";
+        if (scanStatus) scanStatus.textContent = "Failed. Close this and try Search now.";
+      } finally {
+        scanning = false;
+        if (overlay) overlay.hidden = true;
+      }
+    }
 
-    selectTab("new");
-    updateCounts();
+    if (btnScan) btnScan.addEventListener("click", () => startScan("button"));
+    if (live) startScan("refresh");
+    else if (hint) hint.textContent = "This GitHub snapshot is static. For a live search open http://localhost:8787 on your PC.";
   </script>
 </body>
 </html>`;
